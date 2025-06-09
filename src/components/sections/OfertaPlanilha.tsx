@@ -16,7 +16,7 @@ export default function OfertaPlanilha() {
   return (
     <section id="oferta" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-6 md:px-10">
-        <div className="text-center mb-6">
+        <div className="text-center mb-6 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-headline text-secondary-foreground">
             Garanta o Seu <span className="text-primary">Acesso!</span>
           </h2>
@@ -25,15 +25,15 @@ export default function OfertaPlanilha() {
           </p>
         </div>
 
-        <div className="max-w-md mx-auto my-6">
-            <Badge className="bg-gradient-orange text-accent-foreground text-sm py-2 px-4 shadow-md w-full justify-center">
+        <div className="max-w-md mx-auto my-6 animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+            <Badge className="bg-gradient-orange text-accent-foreground text-sm py-2 px-4 shadow-md w-full justify-center animate-pulse-subtle">
               <AlertTriangle className="mr-2 h-5 w-5" /> Atenção: valor promocional de R$19,90 por tempo limitado!
             </Badge>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
           {/* Plano Básico */}
-          <Card className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up bg-card opacity-80 hover:opacity-100">
+          <Card className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up bg-card opacity-80 hover:opacity-100" style={{animationDelay: '0.2s'}}>
             <CardHeader className="text-center">
               <CardTitle className="font-headline text-2xl text-card-foreground">Plano Básico</CardTitle>
               <div className="mt-4">
@@ -54,7 +54,7 @@ export default function OfertaPlanilha() {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="w-full shadow-md text-lg bg-muted hover:bg-muted/80 text-muted-foreground"
+                className="w-full shadow-md text-lg bg-muted hover:bg-muted/80 text-muted-foreground hover:scale-105 transform transition-transform duration-300"
                 asChild
               >
                 <Link href="/oferta-especial">Obter Agora</Link>
@@ -64,10 +64,10 @@ export default function OfertaPlanilha() {
 
           {/* Plano Premium */}
           <Card 
-            className="flex flex-col shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in-up border-2 border-primary bg-card relative scale-105"
-            style={{ animationDelay: `0.1s` }}
+            className="flex flex-col shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in-up border-2 border-primary bg-card relative lg:scale-105"
+            style={{ animationDelay: `0.3s` }}
           >
-            <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-orange text-accent-foreground text-sm py-1 px-4 shadow-md rounded-full">
+            <Badge className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-orange text-accent-foreground text-sm py-1 px-4 shadow-md rounded-full animate-pulse-subtle" style={{animationDuration: '1.5s'}}>
               <Sparkles className="mr-1 h-4 w-4" /> MAIS POPULAR
             </Badge>
             <CardHeader className="text-center pt-10">
@@ -97,7 +97,7 @@ export default function OfertaPlanilha() {
             <CardFooter>
               <Button 
                 size="lg" 
-                className="w-full shadow-md text-lg bg-gradient-yellow hover:opacity-90 text-black font-bold"
+                className="w-full shadow-md text-lg bg-gradient-yellow hover:opacity-90 hover:scale-105 transform transition-transform duration-300 text-black font-bold"
                 asChild
               >
                 <Link href="https://pay.kirvano.com/1ecb39db-6543-4625-aa73-e08c93dceec7" target="_blank">
@@ -108,12 +108,11 @@ export default function OfertaPlanilha() {
           </Card>
         </div>
 
-        <div className="mt-12 text-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+        <div className="mt-12 text-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <p className="text-sm text-muted-foreground mb-2">Pagamento Seguro:</p>
             <div className="flex justify-center items-center space-x-4 mb-6">
                 <CreditCard className="h-8 w-8 text-muted-foreground" />
                 <PixIcon />
-                {/* Placeholder for Debit Card or other icons */}
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-banknote h-8 w-8 text-muted-foreground"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
             </div>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4">

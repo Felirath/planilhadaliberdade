@@ -15,7 +15,7 @@ export default function UrgenciaPlanilha() {
     <section className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-6 md:px-10 text-center">
         <div className="max-w-2xl mx-auto bg-card p-8 rounded-xl shadow-2xl animate-fade-in-up">
-          <AlertTriangle className="h-12 w-12 mx-auto text-destructive mb-4" />
+          <AlertTriangle className="h-12 w-12 mx-auto text-destructive mb-4 animate-pulse" style={{animationDuration: '1.5s'}} />
           <h2 className="text-2xl md:text-3xl font-headline text-card-foreground mb-2">
             🚨 Atenção: Valor Promocional Por Tempo Limitado!
           </h2>
@@ -23,7 +23,7 @@ export default function UrgenciaPlanilha() {
             Pode subir a qualquer momento. Não perca essa chance!
           </p>
 
-          <div className="my-6">
+          <div className="my-6 animate-fade-in-up" style={{animationDelay: '0.1s'}}>
             <p className="text-lg text-muted-foreground">
               DE: <span className="line-through">R$ 69,90</span>
             </p>
@@ -35,7 +35,8 @@ export default function UrgenciaPlanilha() {
 
           <Button 
             size="lg" 
-            className="w-full text-xl font-bold bg-gradient-yellow hover:opacity-90 text-black shadow-lg mb-6"
+            className="w-full text-xl font-bold bg-gradient-yellow hover:opacity-90 hover:scale-105 transform transition-transform duration-300 text-black shadow-lg mb-6 animate-fade-in-up"
+            style={{animationDelay: '0.2s'}}
             asChild
           >
             <Link href="https://pay.kirvano.com/1ecb39db-6543-4625-aa73-e08c93dceec7" target="_blank">
@@ -43,12 +44,12 @@ export default function UrgenciaPlanilha() {
             </Link>
           </Button>
 
-          <div className="flex justify-center items-center space-x-3 mb-4">
+          <div className="flex justify-center items-center space-x-3 mb-4 animate-fade-in-up" style={{animationDelay: '0.3s'}}>
               <CreditCard className="h-6 w-6 text-muted-foreground" />
               <PixIconSmall />
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-banknote h-6 w-6 text-muted-foreground"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
           </div>
-          <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-3">
+          <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-3 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               <Badge variant="outline" className="py-1 px-3 text-xs bg-muted/30 text-muted-foreground opacity-80">
                   <Shield className="mr-1 h-4 w-4"/> Garantia 7 dias
               </Badge>

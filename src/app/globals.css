@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 98%; /* Off-white */
+    --background: 0 0% 96%; /* Light Gray #F0F0F0 - Adjusted for better contrast if needed */
     --foreground: 220 10% 20%; /* Dark Blue/Gray */
 
     --card: 0 0% 100%; /* White */
@@ -13,24 +13,27 @@
     --popover: 0 0% 100%; /* White */
     --popover-foreground: 220 10% 20%;
 
-    --primary: 140 60% 55%; /* Clean Green: hsl(140, 60%, 55%) */
+    /* Primary: Vibrant Green (#24bc6e) */
+    --primary: 154 65% 47%; /* hsl(154, 65%, 47%) */
     --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 140 50% 94%; /* Light Green for section backgrounds */
-    --secondary-foreground: 140 40% 30%; /* Darker Green for text */
+    /* Secondary for section backgrounds (light gray) */
+    --secondary: 220 15% 95%; /* Slightly different light gray for sections if needed, or use --background */
+    --secondary-foreground: 220 10% 30%; 
 
-    --muted: 220 10% 90%; /* Light Gray */
-    --muted-foreground: 220 10% 45%; /* Medium Gray */
+    --muted: 220 10% 90%; /* Light Gray for muted elements */
+    --muted-foreground: 220 10% 45%; /* Medium Gray for muted text */
 
-    --accent: 30 95% 68%; /* Pastel Orange: hsl(30, 95%, 68%) */
-    --accent-foreground: 25 60% 25%; /* Dark Brown for text on orange */
+    /* Accent: Bright Orange (#FFA500) for CTAs and badges */
+    --accent: 39 100% 50%; /* hsl(39, 100%, 50%) */
+    --accent-foreground: 0 0% 100%; /* White text on orange for good contrast */
 
-    --destructive: 0 70% 55%;
+    --destructive: 0 70% 55%; /* A standard destructive red */
     --destructive-foreground: 0 0% 100%;
 
     --border: 220 10% 85%;
     --input: 220 10% 88%;
-    --ring: 140 60% 55%; /* Primary green for rings */
+    --ring: 154 65% 47%; /* Primary green for rings */
 
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -50,10 +53,6 @@
   }
 
   .dark {
-    /* For dark mode, you might want to adjust these.
-       Keeping them similar to light for now, or you can define a full dark theme.
-       Using inverted or darker pastel shades can work.
-    */
     --background: 220 10% 12%;
     --foreground: 0 0% 95%;
 
@@ -63,24 +62,24 @@
     --popover: 220 10% 15%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 140 60% 50%; /* Slightly darker/more saturated green for dark mode */
+    --primary: 154 65% 42%; /* Slightly darker green for dark mode */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 140 50% 20%; /* Darker Green for section backgrounds */
-    --secondary-foreground: 140 50% 85%; 
+    --secondary: 220 10% 18%; 
+    --secondary-foreground: 220 10% 75%;
 
     --muted: 220 10% 25%;
     --muted-foreground: 220 10% 65%;
 
-    --accent: 30 95% 60%; /* Slightly darker/more saturated orange for dark mode */
-    --accent-foreground: 25 60% 15%;
+    --accent: 39 100% 45%; /* Slightly darker orange for dark mode */
+    --accent-foreground: 0 0% 100%;
     
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 95%;
 
     --border: 220 10% 25%;
     --input: 220 10% 28%;
-    --ring: 140 60% 50%;
+    --ring: 154 65% 42%;
 
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
@@ -105,6 +104,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: theme('fontFamily.body');
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: theme('fontFamily.headline');
   }
 }
 
@@ -117,6 +120,7 @@
   @apply bg-gradient-to-r from-primary to-blue-500 text-transparent bg-clip-text;
 }
 
+/* Gradient Backgrounds */
 .bg-gradient-green-blue {
   background-image: linear-gradient(to right, hsl(var(--primary)), hsl(190, 70%, 60%));
 }
@@ -130,4 +134,48 @@
 
 .bg-gradient-green {
   background-image: linear-gradient(to right, hsl(var(--primary)/0.9), hsl(var(--primary)/0.7));
+}
+
+/* Define animation utilities here if not using Tailwind's default */
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.animate-scale-in-fade-in {
+  animation: scale-in-fade-in 0.5s ease-out forwards;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.03);
+  }
+}
+
+@keyframes scale-in-fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

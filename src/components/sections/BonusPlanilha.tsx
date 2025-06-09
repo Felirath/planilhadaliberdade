@@ -33,7 +33,7 @@ export default function BonusPlanilha() {
   return (
     <section className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-6 md:px-10">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-headline text-secondary-foreground">
             Você Ainda Recebe <span className="text-primary">5 Bônus Exclusivos</span>:
           </h2>
@@ -42,11 +42,11 @@ export default function BonusPlanilha() {
           {bonuses.map((bonus, index) => (
             <Card 
               key={index} 
-              className="shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up bg-card" 
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="shadow-lg hover:shadow-xl group hover:scale-105 transform transition-all duration-300 ease-in-out animate-fade-in-up bg-card" 
+              style={{ animationDelay: `${0.2 + index * 0.1}s` }}
             >
               <CardHeader className="items-center text-center">
-                <div className="p-4 rounded-full bg-primary/10 mb-4 inline-block">
+                <div className="p-4 rounded-full bg-primary/10 mb-4 inline-block group-hover:animate-pulse-subtle">
                  {bonus.icon}
                 </div>
                 <CardTitle className="font-headline text-xl text-card-foreground">{bonus.title}</CardTitle>

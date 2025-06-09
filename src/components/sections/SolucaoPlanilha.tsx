@@ -12,8 +12,8 @@ export default function SolucaoPlanilha() {
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-12 items-center">
-        <div className="order-2 md:order-1 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          <div className="rounded-lg shadow-2xl overflow-hidden border-4 border-primary/30">
+        <div className="order-2 md:order-1 animate-fade-in-up group" style={{ animationDelay: '0.4s' }}>
+          <div className="rounded-lg shadow-2xl overflow-hidden border-4 border-primary/30 group-hover:scale-105 transform transition-transform duration-300">
             <Image
               src="https://sua-melhor-versao.com/imagens/foto.png"
               alt="Planilha Liberdade em Ação"
@@ -25,7 +25,7 @@ export default function SolucaoPlanilha() {
             />
           </div>
         </div>
-        <div className="order-1 md:order-2 space-y-6 animate-fade-in-up">
+        <div className="order-1 md:order-2 space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           <h2 className="text-3xl md:text-4xl font-headline text-foreground">
             Conheça a <span className="text-primary">Planilha Liberdade</span>
           </h2>
@@ -34,13 +34,13 @@ export default function SolucaoPlanilha() {
           </p>
           <ul className="space-y-3">
             {benefits.map((benefit, index) => (
-              <li key={index} className="flex items-center font-body text-muted-foreground">
-                <CheckCircle2 className="h-6 w-6 mr-3 text-primary flex-shrink-0" />
+              <li key={index} className="flex items-center font-body text-muted-foreground animate-fade-in-up" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
+                <CheckCircle2 className="h-6 w-6 mr-3 text-primary flex-shrink-0 animate-scale-in-fade-in" style={{ animationDelay: `${0.5 + index * 0.1}s` }}/>
                 {benefit}
               </li>
             ))}
           </ul>
-          <p className="text-xl font-bold text-primary bg-primary/10 p-4 rounded-lg shadow-md">
+          <p className="text-xl font-bold text-primary bg-primary/10 p-4 rounded-lg shadow-md animate-fade-in-up" style={{ animationDelay: `${0.5 + benefits.length * 0.1}s` }}>
             🧠 Mesmo que você nunca tenha usado uma planilha na vida.
           </p>
         </div>
