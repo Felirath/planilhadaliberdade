@@ -12,8 +12,8 @@ export default function Header() {
           <Image
             src="https://sua-melhor-versao.com/imagens/Logo.png"
             alt="Planilha Liberdade Logo"
-            width={100} 
-            height={100} 
+            width={150} 
+            height={150} 
             className="rounded-sm"
             data-ai-hint="company logo"
           />
@@ -32,3 +32,4 @@ export default function Header() {
     </header>
   );
 }
+

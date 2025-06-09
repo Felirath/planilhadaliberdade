@@ -1,11 +1,12 @@
+
 import Image from 'next/image';
 import { XCircle, AlertTriangle, TrendingDown, Clock, ShieldAlert } from 'lucide-react';
 
 const painPoints = [
-  { text: "Você trabalha o mês inteiro, mas o dinheiro desaparece.", icon: <TrendingDown className="h-6 w-6 text-primary" /> },
-  { text: "Toda vez que tenta se organizar, se sente mais perdido ainda.", icon: <AlertTriangle className="h-6 w-6 text-primary" /> },
-  { text: "Vive com medo dos boletos, e sente que nunca vai sair dessa roda de sofrimento.", icon: <Clock className="h-6 w-6 text-primary" /> },
-  { text: "Não consegue guardar nada, e a cada mês sente mais ansiedade e culpa.", icon: <ShieldAlert className="h-6 w-6 text-primary" /> }
+  { text: "Você trabalha o mês inteiro, mas o dinheiro desaparece.", icon: <TrendingDown className="h-6 w-6 text-destructive" /> },
+  { text: "Toda vez que tenta se organizar, se sente mais perdido ainda.", icon: <AlertTriangle className="h-6 w-6 text-destructive" /> },
+  { text: "Vive com medo dos boletos, e sente que nunca vai sair dessa roda de sofrimento.", icon: <Clock className="h-6 w-6 text-destructive" /> },
+  { text: "Não consegue guardar nada, e a cada mês sente mais ansiedade e culpa.", icon: <ShieldAlert className="h-6 w-6 text-destructive" /> }
 ];
 
 export default function DoresPlanilha() {
@@ -30,7 +31,7 @@ export default function DoresPlanilha() {
           {painPoints.map((point, index) => (
             <li 
               key={index} 
-              className="p-5 bg-card rounded-xl shadow-lg animate-fade-in-up group hover:shadow-2xl transition-all duration-300 border-l-4 border-primary/50 hover:border-primary flex items-start space-x-4" 
+              className="p-5 bg-card rounded-xl shadow-lg animate-fade-in-up group hover:shadow-2xl transition-all duration-300 border-l-4 border-destructive/50 hover:border-destructive flex items-start space-x-4" 
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
               <div className="flex-shrink-0 mt-1 opacity-70 group-hover:opacity-100 transition-opacity">
@@ -40,10 +41,20 @@ export default function DoresPlanilha() {
             </li>
           ))}
         </ul>
-        <p className="text-xl md:text-2xl font-bold text-center text-primary bg-primary/10 p-6 rounded-lg shadow-xl animate-fade-in-up border border-primary/30" style={{ animationDelay: `${0.3 + painPoints.length * 0.1}s` }}>
-          <XCircle className="inline-block h-8 w-8 mr-2 text-red-500 animate-pulse-subtle" /> Isso não é falta de esforço. <span className="text-primary-foreground bg-primary px-2 py-1 rounded-md shadow-sm">É falta de CLAREZA.</span>
-        </p>
+        <div 
+          className="text-xl md:text-2xl font-bold text-center bg-primary/10 p-6 rounded-lg shadow-xl animate-fade-in-up border border-primary/30" 
+          style={{ animationDelay: `${0.3 + painPoints.length * 0.1}s` }}
+        >
+          <p className="flex items-center justify-center text-foreground">
+            <XCircle className="inline-block h-8 w-8 mr-2 text-red-500 animate-pulse-subtle" />
+            Isso não é falta de esforço.
+          </p>
+          <p className="mt-2">
+            <span className="text-primary-foreground bg-primary px-3 py-1.5 rounded-lg shadow-md inline-block">É falta de CLAREZA.</span>
+          </p>
+        </div>
       </div>
     </section>
   );
 }
+

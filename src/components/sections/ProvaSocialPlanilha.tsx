@@ -28,7 +28,7 @@ export default function ProvaSocialPlanilha() {
   }, [nextSlide]);
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-green text-primary-foreground">
+    <section className="py-16 md:py-24 bg-primary text-primary-foreground">
       <div className="container mx-auto px-6 md:px-10">
         <h2 className="text-3xl md:text-4xl font-headline text-center mb-4 text-primary-foreground">
           Mais de <span className="text-yellow-300">3000 pessoas</span> já começaram sua jornada!
@@ -38,19 +38,19 @@ export default function ProvaSocialPlanilha() {
         </p>
         
         <div className="relative max-w-xl mx-auto animate-fade-in-up">
-          <div className="overflow-hidden rounded-lg shadow-xl bg-white">
+          <div className="overflow-hidden rounded-lg shadow-xl"> {/* Removed bg-white here */}
             <div 
               className="flex transition-transform duration-500 ease-in-out" 
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {testimonialsImages.map((src, index) => (
-                <div key={index} className="w-full flex-shrink-0 h-auto flex justify-center items-start p-2"> {/* Added p-2 for some spacing if needed */}
+                <div key={index} className="w-full flex-shrink-0 h-auto flex justify-center items-start"> {/* Removed p-2 */}
                    <Image
                     src={src}
                     alt={`Testemunho ${index + 1}`}
-                    width={400} // Adjusted for a more typical phone screenshot display within max-w-xl
-                    height={800} // Adjusted height
-                    className="object-contain max-w-full max-h-[75vh] rounded-md" // max-h slightly increased
+                    width={400} 
+                    height={800} 
+                    className="object-contain max-w-full max-h-[75vh] rounded-md" 
                     data-ai-hint="testimonial social proof"
                   />
                 </div>
