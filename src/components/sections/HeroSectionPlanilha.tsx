@@ -68,11 +68,11 @@ export default function HeroSectionPlanilha() {
 
         <Card className="max-w-xs mx-auto bg-card text-card-foreground shadow-xl p-4 md:p-6 animate-fade-in-up rounded-2xl border border-primary/20" style={{ animationDelay: '0.7s' }}>
           <CardContent className="p-0 text-center">
-            <Badge className="mb-3 py-1.5 px-3 text-sm bg-accent text-accent-foreground font-semibold rounded-full animate-pulse-subtle">
+            <Badge className="mb-4 py-1.5 px-3 text-sm bg-accent text-accent-foreground font-semibold rounded-full animate-pulse-subtle">
               <Flame className="h-4 w-4 mr-1" /> OFERTA LIMITADA - ÚLTIMAS HORAS
             </Badge>
-            <p className="text-sm text-muted-foreground">Por apenas</p>
-            <p className="text-5xl font-bold text-primary my-1">R$ 9,90</p>
+            <p className="text-sm text-muted-foreground mb-1">Por apenas</p>
+            <p className="text-5xl font-bold text-primary my-1 mb-3">R$ 9,90</p>
             
             <Link href="#oferta" passHref>
               <Button 
@@ -83,15 +83,21 @@ export default function HeroSectionPlanilha() {
                 Obter Agora
               </Button>
             </Link>
-            <div className="flex items-center justify-center space-x-2 mb-2">
+            <div className="flex items-center justify-center space-x-2 mb-3">
                 <VisaIcon />
                 <MastercardIcon />
                 <GenericCardIcon />
                 <PixTextIcon />
             </div>
-            <div className="flex items-center justify-center text-xs text-muted-foreground">
-              <LockKeyhole className="h-3 w-3 mr-1 text-primary" />
-              Compra Segura <span className="mx-1">•</span> Garantia de 7 dias
+            <div className="flex flex-col items-center text-xs text-muted-foreground space-y-1">
+              <div className="flex items-center">
+                <LockKeyhole className="h-3 w-3 mr-1 text-primary" />
+                <span>Compra Segura</span>
+              </div>
+              <div className="flex items-center">
+                <ShieldCheck className="h-3 w-3 mr-1 text-primary" />
+                <span>Garantia de 7 dias</span>
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -99,4 +105,3 @@ export default function HeroSectionPlanilha() {
     </section>
   );
 }
-
