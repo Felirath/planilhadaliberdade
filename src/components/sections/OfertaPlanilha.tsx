@@ -5,19 +5,33 @@ import { Badge } from '@/components/ui/badge';
 import { CheckCircle2, Shield, LockKeyholeIcon, Flame, TriangleAlertIcon } from 'lucide-react';
 import Link from 'next/link';
 
-const BlueCardIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
-    <rect width="38" height="24" rx="3" fill="#2563eb"/>
-    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
-    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
+const VisaIcon = () => (
+  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+    <rect width="60" height="40" rx="5" fill="#0057A0"/>
+    <text x="30" y="27" fontFamily="Arial, sans-serif" fontSize="20" fill="white" textAnchor="middle" fontWeight="bold">VISA</text>
   </svg>
 );
 
-const RedCardIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
-    <rect width="38" height="24" rx="3" fill="#dc2626"/>
-    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
-    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
+const MastercardIcon = () => (
+  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+    <rect width="60" height="40" rx="5" fill="#EB001B"/>
+    <circle cx="22" cy="20" r="12" fill="#F79E1B"/>
+    <circle cx="38" cy="20" r="12" fill="#FF5F00" opacity="0.8"/>
+    <text x="30" y="35" fontFamily="Arial, sans-serif" fontSize="8" fill="white" textAnchor="middle">mastercard</text>
+  </svg>
+);
+
+const GenericCardIcon = () => (
+  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+    <rect width="60" height="40" rx="5" fill="#4A5568"/>
+    <rect x="5" y="25" width="30" height="5" rx="2" fill="#CBD5E0"/>
+    <rect x="5" y="8" width="10" height="7" rx="1" fill="#CBD5E0"/>
+  </svg>
+);
+
+const PixTextIcon = () => (
+  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+    <text x="30" y="28" fontFamily="Arial, sans-serif" fontSize="24" fill="#24bc6e" textAnchor="middle" fontWeight="bold">PIX</text>
   </svg>
 );
 
@@ -41,17 +55,17 @@ export default function OfertaPlanilha() {
             </Badge>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-8 items-stretch max-w-3xl mx-auto"> {/* Reduced max-width here */}
+        <div className="grid lg:grid-cols-2 gap-8 items-stretch max-w-3xl mx-auto">
           {/* Plano Básico */}
           <Card className="flex flex-col shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up bg-card rounded-xl" style={{animationDelay: '0.2s'}}>
-            <CardHeader className="text-center pt-6 px-6">
-              <CardTitle className="font-headline text-xl font-semibold text-card-foreground">Plano Básico</CardTitle>
-              <div className="mt-2">
+            <CardHeader className="text-left pt-6 px-6">
+              <CardTitle className="font-headline text-xl font-semibold text-card-foreground text-center">Plano Básico</CardTitle>
+              <div className="mt-2 text-center">
                 <span className="text-4xl font-bold text-card-foreground">R$9,90</span>
               </div>
             </CardHeader>
-            <CardContent className="flex-grow px-6 text-center">
-              <ul className="space-y-2 mt-4 inline-block text-left">
+            <CardContent className="flex-grow px-6">
+              <ul className="space-y-2 mt-4">
                 {["Planilha de controle financeiro", "2 meses de acesso", "7 dias de garantia"].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-card-foreground/80">
                     <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0 text-gray-500" />
@@ -80,19 +94,19 @@ export default function OfertaPlanilha() {
             <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-orange text-accent-foreground text-xs font-semibold py-1 px-3 shadow-md rounded-full">
               <Flame className="mr-1 h-3 w-3" /> MAIS POPULAR
             </Badge>
-            <CardHeader className="text-center pt-10 px-6">
-              <CardTitle className="font-headline text-xl font-semibold">Plano Premium</CardTitle>
-              <div className="mt-2">
+            <CardHeader className="text-left pt-10 px-6">
+              <CardTitle className="font-headline text-xl font-semibold text-center">Plano Premium</CardTitle>
+              <div className="mt-2 text-center">
                 <span className="text-lg line-through text-primary-foreground/70">R$ 69,90</span>
-                <div className="flex flex-col items-center gap-1"> {/* Adjusted for centering and positioning */}
+                <div className="flex flex-col items-center gap-1">
                     <span className="text-4xl font-bold">R$19,90</span>
                     <Badge variant="default" className="bg-yellow-400 text-yellow-900 text-xs font-semibold px-2 py-0.5 rounded-full">ECONOMIA DE R$ 50,00</Badge>
                 </div>
                 <p className="text-xs text-primary-foreground/80 mt-1">Melhor custo-benefício</p>
               </div>
             </CardHeader>
-            <CardContent className="flex-grow px-6 text-center">
-              <ul className="space-y-2 mt-4 inline-block text-left">
+            <CardContent className="flex-grow px-6">
+              <ul className="space-y-2 mt-4">
                 {[
                   "Planilha de controle financeiro", "Acesso vitalício", "7 dias de garantia",
                   "Tutorial de como usar a planilha", "Guia de como Não Desistir no Primeiro Mês",
@@ -121,12 +135,13 @@ export default function OfertaPlanilha() {
         </div>
 
         <div className="mt-6 md:mt-8 text-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <div className="flex justify-center items-center space-x-3 mb-3">
-                <BlueCardIcon />
-                <RedCardIcon />
-                <span className="text-sm font-semibold text-muted-foreground">PIX</span>
+            <div className="flex justify-center items-center space-x-2 mb-3">
+                <VisaIcon />
+                <MastercardIcon />
+                <GenericCardIcon />
+                <PixTextIcon />
             </div>
-            <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-3">
+            <div className="flex flex-wrap justify-center items-center gap-2">
                 <Badge variant="outline" className="py-1.5 px-3 text-xs bg-green-100 text-green-700 border-green-300 rounded-md">
                     <Shield className="mr-1.5 h-4 w-4"/> Garantia 7 dias
                 </Badge>
@@ -139,3 +154,4 @@ export default function OfertaPlanilha() {
     </section>
   );
 }
+

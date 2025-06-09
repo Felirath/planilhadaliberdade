@@ -4,19 +4,33 @@ import { Badge } from '@/components/ui/badge';
 import { AlertTriangle, Shield, LockKeyholeIcon, Hand, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
-const BlueCardIconSmall = () => (
-    <svg width="24" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
-      <rect width="38" height="24" rx="3" fill="#2563eb"/>
-      <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
-      <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
+const VisaIcon = () => (
+    <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+      <rect width="60" height="40" rx="5" fill="#0057A0"/>
+      <text x="30" y="27" fontFamily="Arial, sans-serif" fontSize="20" fill="white" textAnchor="middle" fontWeight="bold">VISA</text>
     </svg>
   );
   
-const RedCardIconSmall = () => (
-    <svg width="24" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
-      <rect width="38" height="24" rx="3" fill="#dc2626"/>
-      <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
-      <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
+const MastercardIcon = () => (
+    <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+      <rect width="60" height="40" rx="5" fill="#EB001B"/>
+      <circle cx="22" cy="20" r="12" fill="#F79E1B"/>
+      <circle cx="38" cy="20" r="12" fill="#FF5F00" opacity="0.8"/>
+      <text x="30" y="35" fontFamily="Arial, sans-serif" fontSize="8" fill="white" textAnchor="middle">mastercard</text>
+    </svg>
+);
+  
+const GenericCardIcon = () => (
+    <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+      <rect width="60" height="40" rx="5" fill="#4A5568"/>
+      <rect x="5" y="25" width="30" height="5" rx="2" fill="#CBD5E0"/>
+      <rect x="5" y="8" width="10" height="7" rx="1" fill="#CBD5E0"/>
+    </svg>
+);
+
+const PixTextIcon = () => (
+    <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+      <text x="30" y="28" fontFamily="Arial, sans-serif" fontSize="24" fill="#24bc6e" textAnchor="middle" fontWeight="bold">PIX</text>
     </svg>
   );
 
@@ -26,26 +40,26 @@ export default function UrgenciaPlanilha() {
     <section className="py-16 md:py-24 bg-destructive text-destructive-foreground">
       <div className="container mx-auto px-6 md:px-10 text-center">
         
-        <div className="bg-destructive-foreground/5 text-destructive-foreground p-4 md:p-6 rounded-lg shadow-md mb-8 max-w-xl w-full mx-auto text-center animate-fade-in-up">
-          <AlertTriangle className="h-10 w-10 md:h-12 md:w-12 mx-auto text-yellow-300 mb-3 animate-pulse" style={{animationDuration: '1.2s'}} />
-          <h2 className="text-xl md:text-2xl font-bold mb-1">
-            Atenção: valor promocional por tempo limitado
+        <div className="max-w-xl mx-auto bg-card/10 backdrop-blur-sm p-8 rounded-xl shadow-2xl animate-fade-in-up border border-destructive-foreground/20 mb-8">
+          <AlertTriangle className="h-16 w-16 mx-auto text-yellow-300 mb-4 animate-pulse" style={{animationDuration: '1.2s'}} />
+          <h2 className="text-2xl md:text-3xl font-headline text-destructive-foreground mb-2">
+            🚨 Atenção: Valor Promocional Por Tempo Limitado!
           </h2>
-          <p className="text-sm md:text-base text-destructive-foreground/80">
+          <p className="text-destructive-foreground/80 mb-6">
             Pode subir a qualquer momento. Não perca essa chance!
           </p>
-        </div>
-
-        <div className="bg-card text-card-foreground p-6 md:p-8 rounded-xl shadow-2xl w-full max-w-md mx-auto animate-fade-in-up mb-8" style={{animationDelay: '0.1s'}}>
-          <p className="text-md text-muted-foreground text-center">
-            DE: <span className="line-through">R$ 69,90</span>
-          </p>
-          <p className="text-5xl font-bold text-primary text-center my-1 animate-pulse-subtle" style={{animationDelay: '0.2s'}}>
-            R$ 19,90
-          </p>
-          <Badge variant="default" className="text-sm py-1.5 px-4 bg-yellow-400 text-yellow-900 font-semibold shadow-md block w-fit mx-auto mt-2 mb-6 rounded-full">
-            ECONOMIA DE R$ 50,00
-          </Badge>
+        
+          <div className="my-6 animate-fade-in-up" style={{animationDelay: '0.1s'}}>
+            <p className="text-lg text-destructive-foreground/70">
+              DE: <span className="line-through">R$ 69,90</span>
+            </p>
+            <p className="text-5xl font-bold text-yellow-300 my-1 animate-pulse-subtle" style={{animationDelay: '0.2s'}}>
+              R$ 19,90
+            </p>
+            <Badge variant="default" className="text-sm py-1.5 px-4 bg-yellow-400 text-yellow-900 font-semibold shadow-md mt-2">
+              ECONOMIA DE R$ 50,00
+            </Badge>
+          </div>
         
           <Button 
             size="lg" 
@@ -58,10 +72,11 @@ export default function UrgenciaPlanilha() {
             </Link>
           </Button>
         
-        <div className="flex justify-center items-center space-x-3 mb-4 animate-fade-in-up w-full" style={{animationDelay: '0.3s'}}>
-            <BlueCardIconSmall />
-            <RedCardIconSmall />
-            <span className="text-sm font-semibold text-muted-foreground">PIX</span>
+        <div className="flex justify-center items-center space-x-2 mb-4 animate-fade-in-up w-full" style={{animationDelay: '0.3s'}}>
+            <VisaIcon />
+            <MastercardIcon />
+            <GenericCardIcon />
+            <PixTextIcon />
         </div>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-3 animate-fade-in-up w-full" style={{animationDelay: '0.4s'}}>
             <Badge variant="outline" className="py-1 px-3 text-xs bg-muted text-muted-foreground border-border">
@@ -76,3 +91,4 @@ export default function UrgenciaPlanilha() {
     </section>
   );
 }
+

@@ -7,19 +7,33 @@ import { Badge } from '@/components/ui/badge';
 import { Clock, Gift, CheckCircle2, Shield, LockKeyholeIcon, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
-const BlueCardIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
-    <rect width="38" height="24" rx="3" fill="#2563eb"/>
-    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
-    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
+const VisaIcon = () => (
+  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+    <rect width="60" height="40" rx="5" fill="#0057A0"/>
+    <text x="30" y="27" fontFamily="Arial, sans-serif" fontSize="20" fill="white" textAnchor="middle" fontWeight="bold">VISA</text>
   </svg>
 );
 
-const RedCardIcon = () => (
-  <svg width="24" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
-    <rect width="38" height="24" rx="3" fill="#dc2626"/>
-    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
-    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
+const MastercardIcon = () => (
+  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+    <rect width="60" height="40" rx="5" fill="#EB001B"/>
+    <circle cx="22" cy="20" r="12" fill="#F79E1B"/>
+    <circle cx="38" cy="20" r="12" fill="#FF5F00" opacity="0.8"/>
+    <text x="30" y="35" fontFamily="Arial, sans-serif" fontSize="8" fill="white" textAnchor="middle">mastercard</text>
+  </svg>
+);
+
+const GenericCardIcon = () => (
+  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+    <rect width="60" height="40" rx="5" fill="#4A5568"/>
+    <rect x="5" y="25" width="30" height="5" rx="2" fill="#CBD5E0"/>
+    <rect x="5" y="8" width="10" height="7" rx="1" fill="#CBD5E0"/>
+  </svg>
+);
+
+const PixTextIcon = () => (
+  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
+    <text x="30" y="28" fontFamily="Arial, sans-serif" fontSize="24" fill="#24bc6e" textAnchor="middle" fontWeight="bold">PIX</text>
   </svg>
 );
 
@@ -132,10 +146,11 @@ export default function OfertaEspecialPage() {
                 </Link>
               </Button>
 
-              <div className="flex justify-center items-center space-x-3 mb-3">
-                  <BlueCardIcon />
-                  <RedCardIcon />
-                  <span className="text-sm font-semibold text-primary-foreground/80">PIX</span>
+              <div className="flex justify-center items-center space-x-2 mb-3">
+                  <VisaIcon />
+                  <MastercardIcon />
+                  <GenericCardIcon />
+                  <PixTextIcon />
               </div>
               <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-3">
                   <Badge variant="secondary" className="py-1 px-3 text-xs bg-primary-foreground/20 text-primary-foreground">
@@ -157,3 +172,4 @@ export default function OfertaEspecialPage() {
     </div>
   );
 }
+
