@@ -20,9 +20,8 @@ export default function SolutionSection() {
               alt="Planilha Liberdade Financeira em Ação"
               width={500}
               height={350}
-              layout="responsive"
+              className="rounded-lg" // layout="responsive" is default with width/height
               data-ai-hint="spreadsheet mockup"
-              className="rounded-lg"
             />
           </div>
         </div>
@@ -41,7 +40,7 @@ export default function SolutionSection() {
               </li>
             ))}
           </ul>
-          <Button size="lg" className="bg-gradient-to-r from-accent to-[hsl(39,100%,60%)] hover:opacity-90 transition-opacity text-accent-foreground shadow-lg">
+          <Button size="lg" className="bg-gradient-to-r from-accent to-[hsl(var(--accent)/0.8)] hover:opacity-90 transition-opacity text-accent-foreground shadow-lg">
             Ver Detalhes da Planilha
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
