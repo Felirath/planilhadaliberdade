@@ -21,9 +21,10 @@ const SmartphoneIconHero = () => (
 
 
 export default function HeroSectionPlanilha() {
-  const videoId = "684616231282726840ae836d";
+  const videoId = "684616231282726840ae836d"; // This ID seems to be part of the script and HTML structure provided
   const playerScriptSrc = "https://scripts.converteai.net/0b110d1c-1188-49ac-8ddf-f6c4b4be375e/players/684616231282726840ae836d/player.js";
   const thumbnailSrc = "https://images.converteai.net/0b110d1c-1188-49ac-8ddf-f6c4b4be375e/players/684616231282726840ae836d/thumbnail.jpg";
+
 
   return (
     <section className="py-12 md:py-20 bg-gradient-green-blue text-primary-foreground">
@@ -37,16 +38,16 @@ export default function HeroSectionPlanilha() {
         
         <div className="max-w-2xl mx-auto mb-10 rounded-lg shadow-2xl overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
           <VSLPlayer 
-            videoId={videoId}
-            playerScriptSrc={playerScriptSrc}
-            thumbnailSrc={thumbnailSrc}
+            videoId={videoId} // Used for IDs in the VSLPlayer component
+            playerScriptSrc={playerScriptSrc} // The main player script
+            thumbnailSrc={thumbnailSrc} // The thumbnail image
           />
         </div>
 
         <Card className="max-w-xs mx-auto bg-card text-card-foreground shadow-xl p-4 md:p-6 animate-fade-in-up rounded-2xl border border-primary/20" style={{ animationDelay: '0.7s' }}>
           <CardContent className="p-0 text-center">
-            <Badge className="mb-3 py-1.5 px-3 text-xs bg-gradient-orange text-accent-foreground font-semibold rounded-full animate-pulse-subtle">
-              <Flame className="h-4 w-4 mr-1 text-accent-foreground" /> OFERTA LIMITADA - ÚLTIMAS HORAS
+            <Badge className="mb-3 py-1.5 px-3 text-xs bg-accent text-white font-semibold rounded-full animate-pulse-subtle">
+              <Flame className="h-4 w-4 mr-1" /> OFERTA LIMITADA - ÚLTIMAS HORAS
             </Badge>
             <p className="text-sm text-muted-foreground">Por apenas</p>
             <p className="text-5xl font-bold text-primary my-1">R$ 9,90</p>
@@ -75,3 +76,4 @@ export default function HeroSectionPlanilha() {
     </section>
   );
 }
+

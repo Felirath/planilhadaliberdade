@@ -37,20 +37,20 @@ export default function ProvaSocialPlanilha() {
           Veja o que nossos clientes estão dizendo sobre os resultados obtidos:
         </p>
         
-        <div className="relative max-w-xl mx-auto animate-fade-in-up"> {/* Adjusted max-width for typical testimonial images */}
-          <div className="overflow-hidden rounded-lg shadow-xl bg-white"> {/* Added bg-white for images with transparency */}
+        <div className="relative max-w-xl mx-auto animate-fade-in-up">
+          <div className="overflow-hidden rounded-lg shadow-xl bg-white">
             <div 
               className="flex transition-transform duration-500 ease-in-out" 
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {testimonialsImages.map((src, index) => (
-                <div key={index} className="w-full flex-shrink-0">
+                <div key={index} className="w-full flex-shrink-0 h-auto flex justify-center items-start p-2"> {/* Added p-2 for some spacing if needed */}
                    <Image
                     src={src}
                     alt={`Testemunho ${index + 1}`}
-                    width={500} // Adjust width as per typical aspect ratio or desired display
-                    height={900} // Adjust height, or use layout="responsive" if parent has fixed aspect ratio
-                    className="object-contain w-full h-auto max-h-[70vh] rounded-md" 
+                    width={400} // Adjusted for a more typical phone screenshot display within max-w-xl
+                    height={800} // Adjusted height
+                    className="object-contain max-w-full max-h-[75vh] rounded-md" // max-h slightly increased
                     data-ai-hint="testimonial social proof"
                   />
                 </div>
@@ -86,3 +86,4 @@ export default function ProvaSocialPlanilha() {
     </section>
   );
 }
+
