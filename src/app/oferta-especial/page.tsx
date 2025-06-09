@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Clock, Gift, CheckCircle2, Shield, LockKeyholeIcon, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
+// Reverted to original BlueCardIcon and RedCardIcon for this page
 const BlueCardIcon = () => (
   <svg width="24" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary-foreground/80">
     <rect width="38" height="24" rx="3" fill="#2563eb"/>
@@ -118,6 +119,7 @@ export default function OfertaEspecialPage() {
               <CardTitle className="text-2xl md:text-3xl font-headline">OFERTA ESPECIAL DO PLANO PREMIUM</CardTitle>
             </CardHeader>
             <CardContent className="p-0 text-center">
+              {/* Reverted price positioning logic for R$15.90 */}
               <p className="text-xl line-through text-primary-foreground/70">De R$ 69,90</p>
               <p className="text-2xl line-through text-red-300">Por R$ 19,90</p>
               <p className="text-lg text-primary-foreground/90 mt-2">AGORA:</p>
@@ -132,6 +134,7 @@ export default function OfertaEspecialPage() {
                 </Link>
               </Button>
 
+              {/* Reverted payment icons to original BlueCardIcon/RedCardIcon + PIX text */}
               <div className="flex justify-center items-center space-x-3 mb-3">
                   <BlueCardIcon />
                   <RedCardIcon />

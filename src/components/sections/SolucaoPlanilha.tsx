@@ -14,11 +14,9 @@ export default function SolucaoPlanilha() {
   return (
     <section className="py-16 md:py-24 bg-primary/10">
       <div className="container mx-auto px-6 md:px-10">
-        <h2 className="text-3xl md:text-4xl font-headline text-foreground text-center md:text-left animate-fade-in-up mb-6 md:mb-0">
-          Conheça a <span className="text-primary">Planilha Liberdade</span>
-        </h2>
+        {/* Title moved back into the text block div for original layout */}
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="order-2 md:order-1 animate-fade-in-up group" style={{ animationDelay: '0.4s' }}>
+          <div className="order-2 md:order-1 animate-fade-in-up group" style={{ animationDelay: '0.4s' }}> {/* Image block */}
             <div className="rounded-lg shadow-2xl overflow-hidden border-4 border-primary/30 group-hover:scale-105 transform transition-transform duration-300">
               <Image
                 src="https://sua-melhor-versao.com/imagens/foto.png"
@@ -31,7 +29,10 @@ export default function SolucaoPlanilha() {
               />
             </div>
           </div>
-          <div className="order-1 md:order-2 space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="order-1 md:order-2 space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}> {/* Text block */}
+            <h2 className="text-3xl md:text-4xl font-headline text-foreground text-center md:text-left animate-fade-in-up mb-6">
+              Conheça a <span className="text-primary">Planilha Liberdade</span>
+            </h2>
             <p className="text-lg text-muted-foreground font-body">
               Uma ferramenta simples e poderosa para quem está afogado em dívidas ou <strong className="text-primary font-bold">quer recuperar o controle da própria vida financeira.</strong>
             </p>
