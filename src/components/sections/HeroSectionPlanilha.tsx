@@ -13,15 +13,26 @@ const PixIconHero = () => (
     <path d="M128 56C119.19 56 110.45 58.1701 102.49 62.3901C94.5301 66.6101 87.5501 72.7701 82.0901 80.4201L94.9901 93.3301C99.2701 87.4401 104.901 82.7901 111.401 79.7801C117.901 76.7701 125.06 75.4801 132.21 76.0101C139.36 76.5401 146.23 78.8701 152.22 82.8101C158.21 86.7501 163.11 92.1801 166.47 98.6701L179.38 111.58C185.001 100.68 187.301 88.1001 185.921 75.8301C184.541 63.5601 179.571 52.3401 171.901 43.7801C164.231 35.2201 154.291 29.7201 143.341 28.0001C132.391 26.2601 121.051 28.3801 111.251 34.0601L123.98 46.8101C118.49 41.7001 111.99 38.8301 105.09 38.4401C98.1901 38.0501 91.3701 40.1701 85.8701 44.2801L61.7801 68.4101C59.5001 76.9001 58.2701 85.5601 58.1401 94.2701C57.9401 107.21 61.0501 119.95 67.1001 130.96C73.1501 141.97 81.8601 150.77 92.2801 156.45C102.701 162.13 114.381 164.45 126.091 163.13C137.801 161.81 148.91 156.9 158.09 149L128 56Z" fill="currentColor"/>
   </svg>
 );
-const SmartphoneIconHero = () => (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5 text-muted-foreground">
-    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line>
+
+const BlueCardIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-5 w-auto">
+    <rect width="38" height="24" rx="3" fill="#2563eb"/> {/* Blue-600 Tailwind color */}
+    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
+    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
+  </svg>
+);
+
+const RedCardIcon = () => (
+  <svg width="24" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-5 w-auto">
+    <rect width="38" height="24" rx="3" fill="#dc2626"/> {/* Red-600 Tailwind color */}
+    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
+    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
   </svg>
 );
 
 
 export default function HeroSectionPlanilha() {
-  const videoId = "684616231282726840ae836d"; // This ID seems to be part of the script and HTML structure provided
+  const videoId = "684616231282726840ae836d"; 
   const playerScriptSrc = "https://scripts.converteai.net/0b110d1c-1188-49ac-8ddf-f6c4b4be375e/players/684616231282726840ae836d/player.js";
   const thumbnailSrc = "https://images.converteai.net/0b110d1c-1188-49ac-8ddf-f6c4b4be375e/players/684616231282726840ae836d/thumbnail.jpg";
 
@@ -36,17 +47,20 @@ export default function HeroSectionPlanilha() {
           Chega de terminar o mês no vermelho. Descubra onde seu dinheiro vai e recupere o controle AGORA!
         </p>
         
-        <div className="max-w-2xl mx-auto mb-10 rounded-lg shadow-2xl overflow-hidden animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+        <div 
+            className="max-w-2xl mx-auto mb-10 rounded-lg shadow-2xl overflow-hidden animate-fade-in-up neon-border-primary" 
+            style={{ animationDelay: '0.5s' }}
+        >
           <VSLPlayer 
-            videoId={videoId} // Used for IDs in the VSLPlayer component
-            playerScriptSrc={playerScriptSrc} // The main player script
-            thumbnailSrc={thumbnailSrc} // The thumbnail image
+            videoId={videoId}
+            playerScriptSrc={playerScriptSrc}
+            thumbnailSrc={thumbnailSrc}
           />
         </div>
 
         <Card className="max-w-xs mx-auto bg-card text-card-foreground shadow-xl p-4 md:p-6 animate-fade-in-up rounded-2xl border border-primary/20" style={{ animationDelay: '0.7s' }}>
           <CardContent className="p-0 text-center">
-            <Badge className="mb-3 py-1.5 px-3 text-xs bg-accent text-white font-semibold rounded-full animate-pulse-subtle">
+            <Badge className="mb-3 py-1.5 px-3 text-xs bg-accent text-accent-foreground font-semibold rounded-full animate-pulse-subtle">
               <Flame className="h-4 w-4 mr-1" /> OFERTA LIMITADA - ÚLTIMAS HORAS
             </Badge>
             <p className="text-sm text-muted-foreground">Por apenas</p>
@@ -62,8 +76,8 @@ export default function HeroSectionPlanilha() {
               </Button>
             </Link>
             <div className="flex items-center justify-center space-x-3 mb-2">
-                <CreditCardIcon className="h-5 w-5 text-muted-foreground" data-ai-hint="credit card"/>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-credit-card h-5 w-5 text-muted-foreground"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+                <BlueCardIcon />
+                <RedCardIcon />
                 <PixIconHero />
             </div>
             <div className="flex items-center justify-center text-xs text-muted-foreground">
@@ -76,4 +90,3 @@ export default function HeroSectionPlanilha() {
     </section>
   );
 }
-

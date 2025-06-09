@@ -11,31 +11,29 @@ const PixIcon = () => (
   </svg>
 );
 
-// Basic SVG for Visa
-const VisaIcon = () => (
-  <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto text-blue-600">
-    <path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#142688"/>
-    <path d="M22.6 17.5L20.2 6.5H23.1L25.5 17.5H22.6Z" fill="white"/>
-    <path d="M29.2 12.1C29.2 10.3 30.7 9 32.2 9C33.2 9 33.9 9.5 34.4 10L35.1 7.1C34.4 6.7 33.5 6.5 32.5 6.5C30.9 6.5 29.5 7.3 28.7 8.7L26.5 6.6H23.5L27.6 11.6C27.2 11.9 27 12.4 27 12.9C27 14.1 27.9 15.1 29.1 15.1C30.1 15.1 30.9 14.6 31.3 13.9L31.8 15.1C31.1 15.6 30.2 15.8 29.3 15.8C27.7 15.8 26.5 14.9 25.8 13.5L24.8 14.9H21.7L25.9 8.8C26.6 7.6 27.7 6.5 29.2 6.5C30.7 6.5 31.9 7.2 32.5 8.3L30.9 11.1C30.6 10.4 29.9 10.1 29.2 10.1C28.4 10.1 27.8 10.6 27.8 11.3C27.8 11.5 27.9 11.8 28.1 12.1L25.3 17.5H28.3L29.2 15.1C29.7 14.3 30.5 13.8 31.4 13.8C32.4 13.8 33.1 14.3 33.4 15.1L35.7 6.6H38L34.1 17.5H31.1L30.3 15C30.2 14.8 30.1 14.7 30.1 14.6C29.9 14.7 29.8 14.8 29.7 14.9L29.2 15.8C28.7 16.9 27.6 17.7 26.1 17.7C24.1 17.7 22.8 16.5 22.1 14.9L19.4 17.5H16.4L20.9 10.6L18.2 6.6H21.1L22.9 9.6L24.9 6.6H27.8L23.9 12.8C24.4 13.2 24.8 13.7 24.8 14.3C24.8 15.6 23.9 16.6 22.7 16.6C21.6 16.6 20.8 16.1 20.4 15.3L19.7 17.5H16.8L20.2 6.5H23.1L20.7 17.5H18.2C17.6 17.5 17.1 17.2 16.8 16.8L13.2 8.3C12.9 7.8 12.4 7.5 11.8 7.5C11.3 7.5 10.8 7.7 10.5 8.1L7.1 17.5H4.2L8.6 6.5H11.5L9.6 10.8L11.7 14.8L14.7 6.5H17.6L14.3 15.2L15.2 17.5H12.9L11.4 14L9.1 17.5H6.2L10.6 6.5H13.5L9.6 17.5H6.7L3.4 6.5H0.5L5.8 19.9C6.8 22.1 9.1 23.5 11.8 23.5C13.8 23.5 15.5 22.7 16.7 21.4L18.1 23.3C16.9 24.4 15.1 25 13.2 25C10.2 25 7.6 23.4 6.2 20.7L5.2 18.9C4.8 18.2 4.1 17.8 3.3 17.8C2.6 17.8 1.9 18.2 1.5 18.9L0.5 20.7C0.1 21.4 0 22.2 0 23V23.5H0.1V23C0.1 22.3 0.3 21.6 0.7 21L1.7 19.1C2.1 18.5 2.7 18.1 3.4 18.1C4.1 18.1 4.7 18.5 5.1 19.1L6.1 20.9C7.4 23.2 9.9 24.7 12.8 24.7C15.1 24.7 17.1 23.9 18.5 22.5L17.1 20.6C16.1 21.7 14.6 22.3 12.8 22.3C10.5 22.3 8.5 21.2 7.5 19.3L8.4 17.6L11.8 17.6L15.3 10.2L17.7 17.6H19.9L22.6 6.6H19.7L18.1 10.7L16.7 6.6H13.8L10.5 15.2L9.2 17.6H11.7L15.2 10.2L12.9 6.6L11.5 9.7L14.4 17.6H17.3L20.8 6.6L20.9 6.6L20.9 6.6L23.5 17.6H26.5L30.3 8.7C30.7 7.7 31.7 6.6 33.2 6.6C34.5 6.6 35.6 7.2 36.2 8.1L37.1 6.6H34.2L32.5 9.6L30.6 6.6H27.7L31.5 12.8C31.1 13.2 30.7 13.7 30.7 14.3C30.7 15.6 31.6 16.6 32.8 16.6C33.8 16.6 34.6 16.1 35 15.3L35.7 17.5H38L34.6 6.5H31.7L29.2 17.5H26.2L22.6 6.5H19.7L23.5 13.5C23.8 14.1 24.3 14.5 24.9 14.5C25.4 14.5 25.9 14.3 26.2 13.9L29.6 6.5H32.5L28.2 15.2L27.2 17.5H24.9L27.2 13.9C27.6 13.2 28.3 12.8 29.1 12.8C29.8 12.8 30.4 13.1 30.7 13.7L32.2 10.1C31.5 9.5 30.6 9.1 29.5 9.1C28 9.1 26.8 9.9 26.1 11.2L22.6 17.5Z" fill="white"/>
+const BlueCardIcon = () => (
+  <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
+    <rect width="38" height="24" rx="3" fill="#2563eb"/>
+    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
+    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
   </svg>
 );
 
-// Basic SVG for Mastercard
-const MastercardIcon = () => (
-  <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
-    <circle cx="15" cy="12" r="7" fill="#EB001B"/>
-    <circle cx="23" cy="12" r="7" fill="#F79E1B"/>
-    <path d="M20 12A7.5 7.5 0 0 1 15.5 18A7.5 7.5 0 0 1 11 12A7.5 7.5 0 0 1 15.5 6A7.5 7.5 0 0 1 20 12Z" fill="#FF5F00"/>
+const RedCardIcon = () => (
+  <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
+    <rect width="38" height="24" rx="3" fill="#dc2626"/>
+    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
+    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
   </svg>
 );
 
 
 export default function OfertaPlanilha() {
   return (
-    <section id="oferta" className="py-16 md:py-24 bg-secondary">
+    <section id="oferta" className="py-16 md:py-24 bg-background"> {/* Changed to bg-background */}
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-6 animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-headline text-secondary-foreground">
+          <h2 className="text-3xl md:text-4xl font-headline text-foreground"> {/* Changed to text-foreground */}
             Garanta o Seu <span className="text-primary">Acesso!</span>
           </h2>
           <p className="mt-3 text-lg text-muted-foreground font-body">
@@ -130,12 +128,9 @@ export default function OfertaPlanilha() {
 
         <div className="mt-10 text-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <div className="flex justify-center items-center space-x-4 mb-4">
-                <VisaIcon />
-                <MastercardIcon />
-                <div className="flex items-center space-x-1">
-                  <PixIcon />
-                  <span className="text-sm font-medium text-muted-foreground">PIX</span>
-                </div>
+                <BlueCardIcon />
+                <RedCardIcon />
+                <PixIcon />
             </div>
             <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-3">
                 <Badge variant="outline" className="py-1.5 px-3 text-xs bg-green-100 text-green-700 border-green-300 rounded-md">
