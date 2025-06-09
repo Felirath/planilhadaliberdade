@@ -5,12 +5,12 @@ import { ShieldCheck, CheckCircle } from 'lucide-react';
 
 export default function GarantiaPlanilha() {
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="py-16 md:py-24 bg-primary/10">
       <div className="container mx-auto px-6 md:px-10 text-center">
-        <h2 className="text-3xl md:text-4xl font-headline mb-8 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-headline mb-4 md:mb-8 text-foreground">
           Garantia de <span className="text-primary">7 Dias</span> – Sem Risco Pra Você!
         </h2>
-        <div className="max-w-3xl mx-auto md:flex md:items-center md:gap-8 mb-10 animate-fade-in-up">
+        <div className="md:flex md:items-center md:gap-8 mb-10 animate-fade-in-up">
           <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
             <Image
               src="https://sua-melhor-versao.com/imagens/selo.png"
@@ -21,7 +21,7 @@ export default function GarantiaPlanilha() {
               data-ai-hint="guarantee badge"
             />
           </div>
-          <blockquote className="md:w-2/3 text-lg md:text-xl text-muted-foreground italic bg-secondary rounded-lg shadow-md p-6 md:text-left" style={{ animationDelay: '0.2s' }}>
+          <blockquote className="md:w-2/3 text-lg md:text-xl text-muted-foreground italic bg-card rounded-lg shadow-md p-6 md:text-left" style={{ animationDelay: '0.2s' }}>
             "Teste a planilha. Se não sentir mais controle e clareza sobre o seu dinheiro, <strong className="text-primary not-italic font-semibold">você recebe 100% do seu dinheiro de volta. Sem perguntas.</strong>"
           </blockquote>
         </div>
