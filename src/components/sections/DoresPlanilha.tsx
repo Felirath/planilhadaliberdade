@@ -1,10 +1,10 @@
 
 import Image from 'next/image';
-import { XCircle, AlertTriangle, TrendingDown, Clock, ShieldAlert } from 'lucide-react';
+import { XCircle, TrendingDown, AlertTriangle as AlertTriangleIcon, Clock, ShieldAlert } from 'lucide-react';
 
 const painPoints = [
   { text: "Você trabalha o mês inteiro, mas o dinheiro desaparece.", icon: <TrendingDown className="h-6 w-6 text-destructive" /> },
-  { text: "Toda vez que tenta se organizar, se sente mais perdido ainda.", icon: <AlertTriangle className="h-6 w-6 text-destructive" /> },
+  { text: "Toda vez que tenta se organizar, se sente mais perdido ainda.", icon: <AlertTriangleIcon className="h-6 w-6 text-destructive" /> },
   { text: "Vive com medo dos boletos, e sente que nunca vai sair dessa roda de sofrimento.", icon: <Clock className="h-6 w-6 text-destructive" /> },
   { text: "Não consegue guardar nada, e a cada mês sente mais ansiedade e culpa.", icon: <ShieldAlert className="h-6 w-6 text-destructive" /> }
 ];
@@ -29,9 +29,9 @@ export default function DoresPlanilha() {
         </div>
         <ul className="space-y-5 max-w-2xl mx-auto mb-10 text-lg font-body text-secondary-foreground/90">
           {painPoints.map((point, index) => (
-            <li 
-              key={index} 
-              className="p-5 bg-card rounded-xl shadow-lg animate-fade-in-up group hover:shadow-2xl transition-all duration-300 border-l-4 border-destructive/50 hover:border-destructive flex items-start space-x-4" 
+            <li
+              key={index}
+              className="p-5 bg-card rounded-xl shadow-lg animate-fade-in-up group hover:shadow-2xl transition-all duration-300 border-l-4 border-destructive/50 hover:border-destructive flex items-start space-x-4"
               style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
               <div className="flex-shrink-0 mt-1 opacity-70 group-hover:opacity-100 transition-opacity">
@@ -41,8 +41,8 @@ export default function DoresPlanilha() {
             </li>
           ))}
         </ul>
-        <div 
-          className="text-xl md:text-2xl font-bold text-center bg-primary/10 p-6 rounded-lg shadow-xl animate-fade-in-up border border-primary/30" 
+        <div
+          className="text-xl md:text-2xl font-bold text-center bg-yellow-100 p-6 rounded-lg shadow-xl animate-fade-in-up border border-yellow-300"
           style={{ animationDelay: `${0.3 + painPoints.length * 0.1}s` }}
         >
           <p className="flex items-center justify-center text-foreground">
@@ -57,3 +57,4 @@ export default function DoresPlanilha() {
     </section>
   );
 }
+
