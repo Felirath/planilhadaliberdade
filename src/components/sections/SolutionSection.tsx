@@ -16,7 +16,7 @@ export default function SolutionSection() {
         <div className="order-2 md:order-1 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           <div className="rounded-lg shadow-2xl overflow-hidden">
             <Image
-              src="https://placehold.co/500x350.png"
+              src="https://sua-melhor-versao.com/imagens/foto.png"
               alt="Planilha Liberdade Financeira em Ação"
               width={500}
               height={350}
