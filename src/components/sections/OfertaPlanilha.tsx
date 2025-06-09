@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -11,29 +12,29 @@ const PixIcon = () => (
   </svg>
 );
 
-const BlueCardIcon = () => (
+const VisaIcon = () => (
   <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
-    <rect width="38" height="24" rx="3" fill="#2563eb"/>
-    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
-    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
+    <rect width="38" height="24" rx="3" fill="#1a1f71"/>
+    <text x="50%" y="50%" dominantBaseline="middle" textAnchor="middle" fontSize="10" fontWeight="bold" fill="white">VISA</text>
   </svg>
 );
 
-const RedCardIcon = () => (
+const MastercardIcon = () => (
   <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
-    <rect width="38" height="24" rx="3" fill="#dc2626"/>
-    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
-    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
+    <rect width="38" height="24" rx="3" fill="white" stroke="#e0e0e0"/>
+    <circle cx="13" cy="12" r="6" fill="#ea001b"/>
+    <circle cx="25" cy="12" r="6" fill="#ff5f00"/>
+    <path d="M19 12 A6 6 0 0 0 19 12 A6 6 0 0 1 19 12" fill="#f79e1b" />
   </svg>
 );
 
 
 export default function OfertaPlanilha() {
   return (
-    <section id="oferta" className="py-16 md:py-24 bg-background"> {/* Changed to bg-background */}
+    <section id="oferta" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-6 animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-headline text-foreground"> {/* Changed to text-foreground */}
+          <h2 className="text-3xl md:text-4xl font-headline text-foreground">
             Garanta o Seu <span className="text-primary">Acesso!</span>
           </h2>
           <p className="mt-3 text-lg text-muted-foreground font-body">
@@ -126,13 +127,13 @@ export default function OfertaPlanilha() {
           </Card>
         </div>
 
-        <div className="mt-10 text-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <div className="mt-6 md:mt-10 text-center animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <div className="flex justify-center items-center space-x-4 mb-4">
-                <BlueCardIcon />
-                <RedCardIcon />
+                <VisaIcon />
+                <MastercardIcon />
                 <PixIcon />
             </div>
-            <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-3">
+            <div className="flex flex-row justify-center items-center space-y-0 space-x-3">
                 <Badge variant="outline" className="py-1.5 px-3 text-xs bg-green-100 text-green-700 border-green-300 rounded-md">
                     <Shield className="mr-1.5 h-4 w-4"/> Garantia 7 dias
                 </Badge>

@@ -50,11 +50,10 @@ export default function DoresPlanilha() {
             Isso não é falta de esforço.
           </p>
           <p className="mt-2">
-            <span className="text-primary-foreground bg-primary px-3 py-1.5 rounded-lg shadow-md inline-block">É falta de CLAREZA.</span>
+            <span className="text-yellow-900 bg-yellow-400 px-3 py-1.5 rounded-lg shadow-md inline-block">É falta de CLAREZA.</span>
           </p>
         </div>
       </div>
     </section>
   );
 }
-

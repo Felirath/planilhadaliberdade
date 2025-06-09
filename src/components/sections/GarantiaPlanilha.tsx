@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ShieldCheck, CheckCircle } from 'lucide-react';
@@ -9,19 +10,21 @@ export default function GarantiaPlanilha() {
         <h2 className="text-3xl md:text-4xl font-headline mb-8 text-foreground">
           Garantia de <span className="text-primary">7 Dias</span> – Sem Risco Pra Você!
         </h2>
-        <div className="max-w-sm mx-auto mb-10 animate-fade-in-up">
-          <Image
-            src="https://sua-melhor-versao.com/imagens/selo.png"
-            alt="Selo de Garantia 7 Dias"
-            width={200}
-            height={200}
-            className="mx-auto"
-            data-ai-hint="guarantee badge"
-          />
+        <div className="max-w-3xl mx-auto md:flex md:items-center md:gap-8 mb-10 animate-fade-in-up">
+          <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
+            <Image
+              src="https://sua-melhor-versao.com/imagens/selo.png"
+              alt="Selo de Garantia 7 Dias"
+              width={200}
+              height={200}
+              className="mx-auto"
+              data-ai-hint="guarantee badge"
+            />
+          </div>
+          <blockquote className="md:w-2/3 text-lg md:text-xl text-muted-foreground italic bg-secondary rounded-lg shadow-md p-6 md:text-left" style={{ animationDelay: '0.2s' }}>
+            "Teste a planilha. Se não sentir mais controle e clareza sobre o seu dinheiro, <strong className="text-primary not-italic font-semibold">você recebe 100% do seu dinheiro de volta. Sem perguntas.</strong>"
+          </blockquote>
         </div>
-        <blockquote className="text-lg md:text-xl text-muted-foreground italic max-w-2xl mx-auto mb-8 p-6 bg-secondary rounded-lg shadow-md animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          "Teste a planilha. Se não sentir mais controle e clareza sobre o seu dinheiro, <strong className="text-primary not-italic font-semibold">você recebe 100% do seu dinheiro de volta. Sem perguntas.</strong>"
-        </blockquote>
         
         <div className="flex items-center justify-center space-x-2 text-xl font-semibold text-primary animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <ShieldCheck size={32} /> 

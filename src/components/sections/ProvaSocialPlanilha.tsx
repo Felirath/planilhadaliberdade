@@ -23,12 +23,12 @@ export default function ProvaSocialPlanilha() {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 5000); // Auto scroll every 5 seconds
+    const interval = setInterval(nextSlide, 5000); 
     return () => clearInterval(interval);
   }, [nextSlide]);
 
   return (
-    <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+    <section className="py-16 md:py-24 text-primary-foreground" style={{ backgroundColor: '#182c25' }}>
       <div className="container mx-auto px-6 md:px-10">
         <h2 className="text-3xl md:text-4xl font-headline text-center mb-4 text-primary-foreground">
           Mais de <span className="text-yellow-300">3000 pessoas</span> já começaram sua jornada!
@@ -38,13 +38,13 @@ export default function ProvaSocialPlanilha() {
         </p>
         
         <div className="relative max-w-xl mx-auto animate-fade-in-up">
-          <div className="overflow-hidden rounded-lg shadow-xl"> {/* Removed bg-white here */}
+          <div className="overflow-hidden rounded-lg shadow-xl">
             <div 
               className="flex transition-transform duration-500 ease-in-out" 
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {testimonialsImages.map((src, index) => (
-                <div key={index} className="w-full flex-shrink-0 h-auto flex justify-center items-start"> {/* Removed p-2 */}
+                <div key={index} className="w-full flex-shrink-0 h-auto flex justify-center items-start"> 
                    <Image
                     src={src}
                     alt={`Testemunho ${index + 1}`}
@@ -86,4 +86,3 @@ export default function ProvaSocialPlanilha() {
     </section>
   );
 }
-
