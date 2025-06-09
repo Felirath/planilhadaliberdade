@@ -28,12 +28,12 @@ export default function ProvaSocialPlanilha() {
   }, [nextSlide]);
 
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="py-16 md:py-24 bg-gradient-green text-primary-foreground">
       <div className="container mx-auto px-6 md:px-10">
-        <h2 className="text-3xl md:text-4xl font-headline text-center mb-4 text-foreground">
-          Mais de <span className="text-primary">3000 pessoas</span> já começaram sua jornada!
+        <h2 className="text-3xl md:text-4xl font-headline text-center mb-4 text-primary-foreground">
+          Mais de <span className="text-yellow-300">3000 pessoas</span> já começaram sua jornada!
         </h2>
-        <p className="text-lg text-center text-muted-foreground mb-12">
+        <p className="text-lg text-center text-primary-foreground/80 mb-12">
           Veja o que nossos clientes estão dizendo sobre os resultados obtidos:
         </p>
         
@@ -50,7 +50,7 @@ export default function ProvaSocialPlanilha() {
                     alt={`Testemunho ${index + 1}`}
                     width={700}
                     height={700} 
-                    className="object-contain w-full h-auto max-h-[70vh]"
+                    className="object-contain w-full h-auto max-h-[70vh] bg-white rounded-md" // Added bg-white for images with transparency
                     data-ai-hint="testimonial social proof"
                   />
                 </div>
@@ -59,24 +59,24 @@ export default function ProvaSocialPlanilha() {
           </div>
           <button 
             onClick={prevSlide} 
-            className="absolute top-1/2 left-0 -translate-y-1/2 transform bg-card/70 hover:bg-card text-foreground p-2 rounded-full shadow-md z-10"
+            className="absolute top-1/2 left-2 md:-left-12 -translate-y-1/2 transform bg-card/80 hover:bg-card text-foreground p-3 rounded-full shadow-md z-10 hover:scale-110 transition-all"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
           <button 
             onClick={nextSlide} 
-            className="absolute top-1/2 right-0 -translate-y-1/2 transform bg-card/70 hover:bg-card text-foreground p-2 rounded-full shadow-md z-10"
+            className="absolute top-1/2 right-2 md:-right-12 -translate-y-1/2 transform bg-card/80 hover:bg-card text-foreground p-3 rounded-full shadow-md z-10 hover:scale-110 transition-all"
             aria-label="Next testimonial"
           >
             <ChevronRight className="h-6 w-6" />
           </button>
-           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+           <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
             {testimonialsImages.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full ${currentIndex === index ? 'bg-primary' : 'bg-muted'}`}
+                className={`w-3 h-3 rounded-full transition-all ${currentIndex === index ? 'bg-primary-foreground scale-125' : 'bg-primary-foreground/50 hover:bg-primary-foreground/70'}`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}

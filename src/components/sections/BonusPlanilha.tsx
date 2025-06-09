@@ -3,27 +3,27 @@ import { BookOpen, Zap, Users, HeartHandshake, TrendingUp } from 'lucide-react';
 
 const bonuses = [
   {
-    icon: <BookOpen className="h-8 w-8 text-primary" />,
+    icon: <BookOpen className="h-8 w-8 text-primary-foreground" />,
     title: "Tutorial de Como Usar a Planilha",
     description: "Tutorial passo a passo de como utilizar a planilha."
   },
   {
-    icon: <HeartHandshake className="h-8 w-8 text-primary" />,
+    icon: <HeartHandshake className="h-8 w-8 text-primary-foreground" />,
     title: "Guia: Como Não Desistir no Primeiro Mês",
     description: "Técnicas práticas para criar o hábito de controle financeiro e superar a fase mais difícil."
   },
   {
-    icon: <Zap className="h-8 w-8 text-primary" />,
+    icon: <Zap className="h-8 w-8 text-primary-foreground" />,
     title: "10 Hábitos Que Afundam Suas Finanças",
     description: "Descubra os comportamentos que drenam seu dinheiro e aprenda a eliminá-los."
   },
   {
-    icon: <TrendingUp className="h-8 w-8 text-primary" />,
+    icon: <TrendingUp className="h-8 w-8 text-primary-foreground" />,
     title: "Guia Rápido: Economizar Ganhando Pouco",
     description: "Estratégias realistas para fazer o dinheiro render mesmo com salário apertado."
   },
   {
-    icon: <Users className="h-8 w-8 text-primary" />,
+    icon: <Users className="h-8 w-8 text-primary-foreground" />,
     title: "Método Adeus Dívidas",
     description: "O passo a passo comprovado para sair das dívidas e construir patrimônio."
   }
@@ -42,17 +42,17 @@ export default function BonusPlanilha() {
           {bonuses.map((bonus, index) => (
             <Card 
               key={index} 
-              className="shadow-lg hover:shadow-xl group hover:scale-105 transform transition-all duration-300 ease-in-out animate-fade-in-up bg-card" 
+              className="shadow-xl group hover:scale-105 transform transition-all duration-300 ease-in-out animate-fade-in-up bg-gradient-green text-primary-foreground border border-primary/30" 
               style={{ animationDelay: `${0.2 + index * 0.1}s` }}
             >
               <CardHeader className="items-center text-center">
-                <div className="p-4 rounded-full bg-primary/10 mb-4 inline-block group-hover:animate-pulse-subtle">
+                <div className="p-4 rounded-full bg-primary-foreground/10 mb-4 inline-block group-hover:animate-pulse-subtle">
                  {bonus.icon}
                 </div>
-                <CardTitle className="font-headline text-xl text-card-foreground">{bonus.title}</CardTitle>
+                <CardTitle className="font-headline text-xl text-primary-foreground">{bonus.title}</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="font-body text-muted-foreground">{bonus.description}</CardDescription>
+                <CardDescription className="font-body text-primary-foreground/80">{bonus.description}</CardDescription>
               </CardContent>
             </Card>
           ))}
