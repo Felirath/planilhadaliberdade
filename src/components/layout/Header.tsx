@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -11,8 +12,8 @@ export default function Header() {
           <Image
             src="https://sua-melhor-versao.com/imagens/Logo.png"
             alt="Planilha Liberdade Logo"
-            width={60} 
-            height={60} 
+            width={80} 
+            height={80} 
             className="rounded-sm"
             data-ai-hint="company logo"
           />
