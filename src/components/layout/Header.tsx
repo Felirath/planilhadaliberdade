@@ -11,12 +11,11 @@ export default function Header() {
           <Image
             src="https://sua-melhor-versao.com/imagens/Logo.png"
             alt="Planilha Liberdade Logo"
-            width={50} // Increased size
-            height={50} // Increased size
+            width={60} 
+            height={60} 
             className="rounded-sm"
             data-ai-hint="company logo"
           />
-          {/* <h1 className="text-xl font-headline text-primary">Planilha Liberdade</h1> */}
         </Link>
         <Button 
           asChild 

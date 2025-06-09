@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   :root {
     --background: 0 0% 96%; /* Light Gray #F0F0F0 - Adjusted for better contrast if needed */
     --foreground: 220 10% 20%; /* Dark Blue/Gray */
@@ -26,7 +29,7 @@
 
     /* Accent: Bright Orange (#FFA500) for CTAs and badges */
     --accent: 39 100% 50%; /* hsl(39, 100%, 50%) */
-    --accent-foreground: 0 0% 100%; /* White text on orange for good contrast */
+    --accent-foreground: 0 0% 0%; /* Black text on orange for good contrast */
 
     --destructive: 0 70% 55%; /* A standard destructive red */
     --destructive-foreground: 0 0% 100%;
@@ -72,7 +75,7 @@
     --muted-foreground: 220 10% 65%;
 
     --accent: 39 100% 45%; /* Slightly darker orange for dark mode */
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 0 0% 0%; /* Black text on orange */
     
     --destructive: 0 60% 50%;
     --destructive-foreground: 0 0% 95%;

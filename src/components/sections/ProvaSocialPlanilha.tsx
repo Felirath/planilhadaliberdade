@@ -1,6 +1,6 @@
+
 'use client';
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import React, { useState, useEffect, useCallback } from 'react';
 
@@ -37,8 +37,8 @@ export default function ProvaSocialPlanilha() {
           Veja o que nossos clientes estão dizendo sobre os resultados obtidos:
         </p>
         
-        <div className="relative max-w-3xl mx-auto animate-fade-in-up">
-          <div className="overflow-hidden rounded-lg shadow-xl">
+        <div className="relative max-w-xl mx-auto animate-fade-in-up"> {/* Adjusted max-width for typical testimonial images */}
+          <div className="overflow-hidden rounded-lg shadow-xl bg-white"> {/* Added bg-white for images with transparency */}
             <div 
               className="flex transition-transform duration-500 ease-in-out" 
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -48,9 +48,9 @@ export default function ProvaSocialPlanilha() {
                    <Image
                     src={src}
                     alt={`Testemunho ${index + 1}`}
-                    width={700}
-                    height={700} 
-                    className="object-contain w-full h-auto max-h-[70vh] bg-white rounded-md" // Added bg-white for images with transparency
+                    width={500} // Adjust width as per typical aspect ratio or desired display
+                    height={900} // Adjust height, or use layout="responsive" if parent has fixed aspect ratio
+                    className="object-contain w-full h-auto max-h-[70vh] rounded-md" 
                     data-ai-hint="testimonial social proof"
                   />
                 </div>
