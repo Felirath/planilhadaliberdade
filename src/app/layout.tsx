@@ -1,7 +1,6 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Planilha Liberdade - Domine Seu Dinheiro',
@@ -16,14 +15,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <Script
+        <script
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          strategy="beforeInteractive"
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
           async
           defer
-        />
+        ></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
