@@ -16,6 +16,14 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <Script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          strategy="beforeInteractive"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          async
+          defer
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
@@ -24,12 +32,6 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         <Toaster />
-        <Script
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          strategy="afterInteractive"
-          data-utmify-prevent-xcod-sck
-          data-utmify-prevent-subids
-        />
       </body>
     </html>
   );
