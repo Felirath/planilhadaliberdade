@@ -21,7 +21,7 @@ export default function SolutionSection() {
               alt="Planilha Liberdade Financeira em Ação"
               width={500}
               height={350}
-              className="rounded-lg" // layout="responsive" is default with width/height
+              className="rounded-lg" 
               data-ai-hint="spreadsheet mockup"
             />
           </div>
