@@ -1,8 +1,8 @@
 
 import type {Metadata} from 'next';
+import Script from 'next/script'; // Importar o componente Script
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import Script from 'next/script'; // Importar o componente Script
 
 export const metadata: Metadata = {
   title: 'Planilha Liberdade - Domine Seu Dinheiro',
@@ -25,19 +25,23 @@ export default function RootLayout({
           async
           defer
         ></script>
-        {/* Segundo script (Pixel) - convertido para next/script */}
-        <Script id="pixel-loader-script" strategy="beforeInteractive">
+
+        {/* Segundo script (Pixel) - usando Next/Script */}
+        <Script id="utmify-pixel-loader" strategy="beforeInteractive">
           {`
-            window.pixelId = "684c87d2684525761ce32bfa";
-            var a = document.createElement("script");
-            a.setAttribute("async", "");
-            a.setAttribute("defer", "");
-            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-            if (document.head) { // Adicionado um check de segurança
-              document.head.appendChild(a);
+            if (typeof window !== 'undefined') {
+              window.pixelId = "684c87d2684525761ce32bfa";
+              var a = document.createElement("script");
+              a.setAttribute("async", "");
+              a.setAttribute("defer", "");
+              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+              if (document.head) {
+                document.head.appendChild(a);
+              }
             }
           `}
         </Script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
