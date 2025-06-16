@@ -2,6 +2,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import Script from 'next/script'; // Importar o componente Script
 
 export const metadata: Metadata = {
   title: 'Planilha Liberdade - Domine Seu Dinheiro',
@@ -16,18 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.pixelId = "684c87d2684525761ce32bfa";
-              var a = document.createElement("script");
-              a.setAttribute("async", "");
-              a.setAttribute("defer", "");
-              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-              document.head.appendChild(a);
-            `,
-          }}
-        />
+        {/* Primeiro script (UTMify) - mantido como tag crua */}
         <script
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
@@ -35,6 +25,19 @@ export default function RootLayout({
           async
           defer
         ></script>
+        {/* Segundo script (Pixel) - convertido para next/script */}
+        <Script id="pixel-loader-script" strategy="beforeInteractive">
+          {`
+            window.pixelId = "684c87d2684525761ce32bfa";
+            var a = document.createElement("script");
+            a.setAttribute("async", "");
+            a.setAttribute("defer", "");
+            a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+            if (document.head) { // Adicionado um check de segurança
+              document.head.appendChild(a);
+            }
+          `}
+        </Script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
