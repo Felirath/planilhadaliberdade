@@ -15,16 +15,7 @@ export default function SolutionSection() {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-12 items-center">
         <div className="order-2 md:order-1 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-          <div className="rounded-lg shadow-2xl overflow-hidden">
-            <Image
-              src="https://sua-melhor-versao.com/imagens/mockup1.png"
-              alt="Planilha Liberdade Financeira em Ação"
-              width={500}
-              height={350}
-              className="rounded-lg" 
-              data-ai-hint="spreadsheet mockup"
-            />
-          </div>
+          {/* Imagem removida conforme solicitado */}
         </div>
         <div className="order-1 md:order-2 space-y-6 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-headline text-primary">
@@ -50,3 +41,4 @@ export default function SolutionSection() {
     </section>
   );
 }
+
