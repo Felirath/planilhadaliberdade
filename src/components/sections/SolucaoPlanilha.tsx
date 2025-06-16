@@ -17,17 +17,7 @@ export default function SolucaoPlanilha() {
         {/* Title moved back into the text block div for original layout */}
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="order-2 md:order-1 animate-fade-in-up group" style={{ animationDelay: '0.4s' }}> {/* Image block */}
-            <div className="rounded-lg shadow-2xl overflow-hidden border-4 border-primary/30 group-hover:scale-105 transform transition-transform duration-300">
-              <Image
-                src="https://sua-melhor-versao.com/imagens/foto.png"
-                alt="Planilha Liberdade em Ação"
-                width={500}
-                height={350}
-                layout="responsive"
-                className="rounded-md"
-                data-ai-hint="spreadsheet interface"
-              />
-            </div>
+            {/* O div e a imagem foram removidos daqui */}
           </div>
           <div className="order-1 md:order-2 space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}> {/* Text block */}
             <h2 className="text-3xl md:text-4xl font-headline text-foreground text-center md:text-left animate-fade-in-up mb-6">
