@@ -15,7 +15,7 @@ export default function SolucaoPlanilha() {
     <section className="py-16 md:py-24 bg-primary/10">
       <div className="container mx-auto px-6 md:px-10">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="order-2 md:order-1 animate-fade-in-up group" style={{ animationDelay: '0.4s' }}>
+          <div className="order-1 md:order-1 animate-fade-in-up group" style={{ animationDelay: '0.4s' }}>
             <div className="rounded-lg shadow-xl overflow-hidden group-hover:scale-105 transform transition-transform duration-300 border-2 border-primary/20">
               <Image
                 src="https://sua-melhor-versao.com/imagens/mockup1.png"
@@ -28,7 +28,7 @@ export default function SolucaoPlanilha() {
               />
             </div>
           </div>
-          <div className="order-1 md:order-2 space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+          <div className="order-2 md:order-2 space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <h2 className="text-3xl md:text-4xl font-headline text-foreground text-center md:text-left animate-fade-in-up mb-6">
               Conheça a <span className="text-primary">Planilha Liberdade</span>
             </h2>
@@ -58,4 +58,3 @@ export default function SolucaoPlanilha() {
     </section>
   );
 }
-
