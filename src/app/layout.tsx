@@ -1,6 +1,6 @@
 
 import type {Metadata} from 'next';
-// O componente Script do Next.js não será usado conforme a solicitação de manter os scripts crus.
+import Script from 'next/script'; // Importar o componente Script
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
@@ -17,41 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <script
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          data-utmify-prevent-xcod-sck
-          data-utmify-prevent-subids
-          async
-          defer
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                if (typeof window !== 'undefined') {
-                  window.pixelId = "684c87d2684525761ce32bfa";
-                  var a = document.createElement("script");
-                  a.setAttribute("async", "");
-                  a.setAttribute("defer", "");
-                  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-                  if (document.head) {
-                    document.head.appendChild(a);
-                  } else {
-                    // Fallback se document.head não estiver pronto, embora raro neste ponto.
-                    var observer = new MutationObserver(function(mutations, me) {
-                      if (document.head) {
-                        document.head.appendChild(a);
-                        me.disconnect(); // Parar de observar assim que o head estiver disponível
-                        return;
-                      }
-                    });
-                    observer.observe(document.documentElement, { childList: true, subtree: true });
-                  }
-                }
-              })();
-            `,
-          }}
-        />
+        {/* Fontes do Google são mantidas no head para carregamento antecipado */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
@@ -60,6 +26,29 @@ export default function RootLayout({
       <body className="font-body antialiased" suppressHydrationWarning={true}>
         {children}
         <Toaster />
+
+        {/* Script UTMify latest.js com Next/Script */}
+        <Script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          strategy="afterInteractive"
+          data-utmify-prevent-xcod-sck // Manter atributos data-*
+          data-utmify-prevent-subids
+        />
+
+        {/* Configuração do Pixel ID */}
+        <Script id="utmify-pixel-config" strategy="afterInteractive">
+          {`
+            if (typeof window !== 'undefined') {
+              window.pixelId = "684c87d2684525761ce32bfa";
+            }
+          `}
+        </Script>
+
+        {/* Script UTMify pixel.js com Next/Script, dependendo da configuração acima */}
+        <Script
+          src="https://cdn.utmify.com.br/scripts/pixel/pixel.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
