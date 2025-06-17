@@ -138,7 +138,7 @@ export default function OfertaEspecialPage() {
               <p className="text-5xl font-bold my-1 text-yellow-300">R$ 15,90</p>
               <Button 
                 size="lg" 
-                className="w-full text-xl font-bold bg-gradient-yellow hover:opacity-90 hover:scale-105 transform transition-transform duration-300 text-black shadow-lg mt-6 mb-4"
+                className="w-full text-xl font-bold bg-gradient-yellow hover:opacity-90 text-black shadow-lg mt-6 mb-4"
                 asChild
               >
                 <Link href="https://pay.kirvano.com/a144445e-a658-47dc-b4dc-a2097ae06223" target="_blank">
@@ -172,4 +172,3 @@ export default function OfertaEspecialPage() {
     </div>
   );
 }
-

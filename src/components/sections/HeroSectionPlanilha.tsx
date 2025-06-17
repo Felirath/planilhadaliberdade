@@ -75,7 +75,7 @@ export default function HeroSectionPlanilha() {
             <Link href="#oferta" passHref>
               <Button 
                 size="lg" 
-                className="w-full bg-gradient-to-r from-primary to-[hsl(var(--primary)/0.8)] hover:opacity-90 hover:scale-105 transform transition-all duration-300 text-primary-foreground font-semibold text-lg shadow-lg mb-6 rounded-lg"
+                className="w-full bg-gradient-to-r from-primary to-[hsl(var(--primary)/0.8)] hover:opacity-90 text-primary-foreground font-semibold text-lg shadow-lg mb-6 rounded-lg"
               >
                 <ShoppingCart className="mr-2 h-5 w-5" />
                 Obter Agora
@@ -103,4 +103,3 @@ export default function HeroSectionPlanilha() {
     </section>
   );
 }
-

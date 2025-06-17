@@ -1,6 +1,6 @@
 
 import type {Metadata} from 'next';
-import Script from 'next/script'; // Importar o componente Script
+// O componente Script do Next.js não será usado conforme a solicitação de manter os scripts crus.
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
@@ -17,7 +17,6 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        {/* Primeiro script (UTMify) - mantido como tag crua */}
         <script
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
@@ -25,23 +24,34 @@ export default function RootLayout({
           async
           defer
         ></script>
-
-        {/* Segundo script (Pixel) - usando Next/Script */}
-        <Script id="utmify-pixel-loader" strategy="beforeInteractive">
-          {`
-            if (typeof window !== 'undefined') {
-              window.pixelId = "684c87d2684525761ce32bfa";
-              var a = document.createElement("script");
-              a.setAttribute("async", "");
-              a.setAttribute("defer", "");
-              a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-              if (document.head) {
-                document.head.appendChild(a);
-              }
-            }
-          `}
-        </Script>
-
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                if (typeof window !== 'undefined') {
+                  window.pixelId = "684c87d2684525761ce32bfa";
+                  var a = document.createElement("script");
+                  a.setAttribute("async", "");
+                  a.setAttribute("defer", "");
+                  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+                  if (document.head) {
+                    document.head.appendChild(a);
+                  } else {
+                    // Fallback se document.head não estiver pronto, embora raro neste ponto.
+                    var observer = new MutationObserver(function(mutations, me) {
+                      if (document.head) {
+                        document.head.appendChild(a);
+                        me.disconnect(); // Parar de observar assim que o head estiver disponível
+                        return;
+                      }
+                    });
+                    observer.observe(document.documentElement, { childList: true, subtree: true });
+                  }
+                }
+              })();
+            `,
+          }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
