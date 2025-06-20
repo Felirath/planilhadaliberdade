@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import VSLPlayer from '@/components/common/VSLPlayer';
-import { ShieldCheck, Sparkles, ShoppingCart, Flame, LockKeyhole, CreditCardIcon, Hand } from 'lucide-react';
+import { ShieldCheck, ShoppingCart, Flame, LockKeyhole } from 'lucide-react';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 
@@ -38,7 +38,7 @@ const PixIcon = () => (
 
 
 export default function HeroSectionPlanilha() {
-  const videoId = "684761e50eee7072de674c8f"; 
+  const videoId = "684761e50eee7072de674c8f";
   const playerScriptSrc = "https://scripts.converteai.net/0b110d1c-1188-49ac-8ddf-f6c4b4be375e/players/684761e50eee7072de674c8f/player.js";
   const thumbnailSrc = "https://images.converteai.net/0b110d1c-1188-49ac-8ddf-f6c4b4be375e/players/684761e50eee7072de674c8f/thumbnail.jpg";
 
@@ -52,12 +52,12 @@ export default function HeroSectionPlanilha() {
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           Chega de terminar o mês no vermelho. Descubra onde seu dinheiro vai e recupere o controle AGORA!
         </p>
-        
-        <div 
-            className="max-w-2xl mx-auto mb-10 rounded-lg shadow-2xl overflow-hidden animate-fade-in-up" 
+
+        <div
+            className="max-w-2xl mx-auto mb-10 rounded-lg shadow-2xl overflow-hidden animate-fade-in-up"
             style={{ animationDelay: '0.5s' }}
         >
-          <VSLPlayer 
+          <VSLPlayer
             videoId={videoId}
             playerScriptSrc={playerScriptSrc}
             thumbnailSrc={thumbnailSrc}
@@ -71,16 +71,18 @@ export default function HeroSectionPlanilha() {
             </Badge>
             <p className="text-sm text-muted-foreground mb-2">Por apenas</p>
             <p className="text-5xl font-bold text-primary my-1 mb-6">R$ 9,90</p>
-            
-            <Link href="#oferta" passHref>
-              <Button 
-                size="lg" 
-                className="w-full bg-gradient-to-r from-primary to-[hsl(var(--primary)/0.8)] hover:opacity-90 text-primary-foreground font-semibold text-lg shadow-lg mb-6 rounded-lg"
-              >
+
+            <Button
+              size="lg"
+              className="w-full bg-gradient-to-r from-primary to-[hsl(var(--primary)/0.8)] hover:opacity-90 text-primary-foreground font-semibold text-lg shadow-lg mb-6 rounded-lg"
+              asChild
+            >
+              <Link href="#oferta">
                 <ShoppingCart className="mr-2 h-5 w-5" />
                 Obter Agora
-              </Button>
-            </Link>
+              </Link>
+            </Button>
+
             <div className="flex items-center justify-center space-x-2 mb-4">
                 <VisaIcon />
                 <MastercardIcon />
