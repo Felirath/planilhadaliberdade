@@ -18,7 +18,7 @@ export default function DoresPlanilha() {
         </h2>
         <div className="max-w-lg mx-auto mb-12 rounded-lg shadow-xl overflow-hidden animate-fade-in-up group hover:scale-105 transition-transform duration-300" style={{animationDelay: '0.2s'}}>
           <Image
-            src="https://i.imgur.com/aBKrh4m.png"
+            src="https://sua-melhor-versao.com/imagens/homem-preocupado.jpg"
             alt="Homem preocupado com as finanças"
             width={600}
             height={400}
@@ -57,4 +57,3 @@ export default function DoresPlanilha() {
     </section>
   );
 }
-
