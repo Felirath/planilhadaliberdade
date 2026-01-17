@@ -71,7 +71,7 @@ export default function UrgenciaPlanilha() {
             className="w-full text-xl font-bold bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg mb-6 rounded-lg h-12"
             asChild
           >
-            <Link href="https://pay.kirvano.com/1ecb39db-6543-4625-aa73-e08c93dceec7" target="_blank">
+            <Link href="https://lastlink.com/p/C1F28CAFF/checkout-payment/" target="_blank">
               👉 QUERO AGORA! <ArrowRight className="ml-2 h-6 w-6" />
             </Link>
           </Button>
