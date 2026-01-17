@@ -126,7 +126,7 @@ export default function OfertaPlanilha() {
                 className="w-full shadow-md text-lg bg-gradient-yellow hover:opacity-95 text-black font-bold rounded-lg h-12"
                 asChild
               >
-                <Link href="https://pay.kirvano.com/1ecb39db-6543-4625-aa73-e08c93dceec7" target="_blank">
+                <Link href="https://lastlink.com/p/C1F28CAFF/checkout-payment/" target="_blank">
                   Obter Agora
                 </Link>
               </Button>

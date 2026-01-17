@@ -141,7 +141,7 @@ export default function OfertaEspecialPage() {
                 className="w-full text-xl font-bold bg-gradient-yellow hover:opacity-90 text-black shadow-lg mt-6 mb-4"
                 asChild
               >
-                <Link href="https://pay.kirvano.com/a144445e-a658-47dc-b4dc-a2097ae06223" target="_blank">
+                <Link href="https://lastlink.com/p/C6F47B2D1/checkout-payment/" target="_blank">
                   Obter Agora <ArrowRight className="ml-2 h-6 w-6" />
                 </Link>
               </Button>
@@ -163,7 +163,7 @@ export default function OfertaEspecialPage() {
             </CardContent>
           </Card>
           <div className="text-center mt-8 animate-fade-in-up" style={{animationDelay: '0.8s'}}>
-            <Link href="https://pay.kirvano.com/d97db0df-9bb9-4183-a0d6-23a538c79338" target="_blank" className="text-sm text-muted-foreground hover:text-primary underline">
+            <Link href="https://lastlink.com/p/CDDBBE2A1/checkout-payment/" target="_blank" className="text-sm text-muted-foreground hover:text-primary underline">
               Não, eu realmente quero o plano básico por R$9,90 e perder a oferta.
             </Link>
           </div>
