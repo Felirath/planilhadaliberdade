@@ -42,7 +42,7 @@ export default function DoresPlanilha() {
           ))}
         </ul>
         <div
-          className="text-xl md:text-2xl font-bold text-center bg-[#182c25] p-6 rounded-lg shadow-xl animate-fade-in-up border border-[#2ac682]/50"
+          className="text-xl md:text-2xl font-bold text-center bg-gradient-dark-green-gold p-6 rounded-lg shadow-xl animate-fade-in-up border border-[#2ac682]/50"
           style={{ animationDelay: `${0.3 + painPoints.length * 0.1}s` }}
         >
           <p className="flex items-center justify-center text-gray-200">
