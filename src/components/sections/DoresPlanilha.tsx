@@ -3,10 +3,10 @@ import Image from 'next/image';
 import { XCircle, TrendingDown, AlertTriangle as AlertTriangleIcon, Clock, ShieldAlert } from 'lucide-react';
 
 const painPoints = [
-  { text: "Você trabalha o mês inteiro, mas o dinheiro desaparece.", icon: <TrendingDown className="h-6 w-6 text-destructive" /> },
-  { text: "Toda vez que tenta se organizar, se sente mais perdido ainda.", icon: <AlertTriangleIcon className="h-6 w-6 text-destructive" /> },
-  { text: "Vive com medo dos boletos, e sente que nunca vai sair dessa roda de sofrimento.", icon: <Clock className="h-6 w-6 text-destructive" /> },
-  { text: "Não consegue guardar nada, e a cada mês sente mais ansiedade e culpa.", icon: <ShieldAlert className="h-6 w-6 text-destructive" /> }
+  { text: "Você trabalha o mês inteiro, mas o dinheiro some antes mesmo de perceber.", icon: <TrendingDown className="h-6 w-6 text-destructive" /> },
+  { text: "Sempre que tenta se organizar, acaba se sentindo ainda mais perdido e frustrado.", icon: <AlertTriangleIcon className="h-6 w-6 text-destructive" /> },
+  { text: "Vive com medo dos boletos e tem a sensação de que nunca vai sair desse ciclo sufocante.", icon: <Clock className="h-6 w-6 text-destructive" /> },
+  { text: "Não consegue guardar nada e, a cada mês, a ansiedade e a culpa só aumentam.", icon: <ShieldAlert className="h-6 w-6 text-destructive" /> }
 ];
 
 export default function DoresPlanilha() {
