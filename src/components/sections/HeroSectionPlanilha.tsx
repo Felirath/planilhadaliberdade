@@ -47,10 +47,10 @@ export default function HeroSectionPlanilha() {
     <section className="py-12 md:py-20 bg-gradient-dark-green-gold text-primary-foreground">
       <div className="container mx-auto px-6 md:px-10 text-center">
         <h1 className="uppercase text-4xl md:text-5xl lg:text-6xl font-headline mb-4 animate-scale-in-fade-in" style={{ animationDelay: '0.1s' }}>
-          Domine Seu Dinheiro e Saia do <span className="text-red-400">Vermelho</span>
+          Domine Seu Dinheiro e Saia do <span className="text-red-500">Vermelho</span>
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-          Chega de terminar o mês no vermelho. Descubra onde seu dinheiro vai e recupere o controle AGORA!
+          Chega de terminar o mês no vermelho. Descubra pra onde tá indo o seu dinheiro e recupere o controle AGORA!
         </p>
 
         <div
