@@ -66,7 +66,7 @@ export default function OfertaPlanilha() {
             </CardHeader>
             <CardContent className="flex-grow px-6">
               <ul className="space-y-2 mt-4">
-                {["Planilha de controle financeiro", "2 meses de acesso", "7 dias de garantia"].map((feature, i) => (
+                {["Planilha da Liberdade", "2 meses de acesso", "7 dias de garantia"].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-card-foreground/80">
                     <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0 text-gray-500" />
                     {feature}
