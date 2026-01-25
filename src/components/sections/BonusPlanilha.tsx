@@ -5,8 +5,8 @@ import { Archive, BookOpen, Zap, Users, HeartHandshake, TrendingUp } from 'lucid
 const bonuses = [
   {
     icon: <Archive className="h-8 w-8 text-primary" />,
-    title: "Versões anteriores",
-    description: "Todas as versões anteriores da Planilha da Liberdade."
+    title: "Todas as nossas versões",
+    description: "Todas as versões anteriores e futuras da Planilha da Liberdade."
   },
   {
     icon: <BookOpen className="h-8 w-8 text-primary" />,
