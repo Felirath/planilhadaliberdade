@@ -31,7 +31,7 @@ export default function ProvaSocialPlanilha() {
     <section className="py-16 md:py-24 text-primary-foreground bg-gradient-dark-green-gold">
       <div className="container mx-auto px-6 md:px-10">
         <h2 className="text-3xl md:text-4xl font-headline text-center mb-4 text-primary-foreground">
-          Mais de <span className="text-yellow-300">3000 pessoas</span> já começaram sua jornada!
+          Mais de <span className="bg-gradient-to-r from-yellow-300 to-yellow-500 text-transparent bg-clip-text">3000 pessoas</span> já começaram suas jornadas!
         </h2>
         <p className="text-lg text-center text-primary-foreground/80 mb-12">
           Veja o que nossos clientes estão dizendo sobre os resultados obtidos:
@@ -86,4 +86,3 @@ export default function ProvaSocialPlanilha() {
     </section>
   );
 }
-
