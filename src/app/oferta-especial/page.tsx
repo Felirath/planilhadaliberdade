@@ -112,7 +112,7 @@ export default function OfertaEspecialPage() {
             <div className="bg-red-100 border-2 border-red-500 p-6 rounded-lg shadow-lg animate-fade-in-up hover:shadow-xl transition-shadow" style={{animationDelay: '0.5s'}}>
               <h3 className="text-xl font-bold text-red-700 mb-3">Por que você NÃO deve escolher o básico:</h3>
               <ul className="space-y-2 text-red-600">
-                {["Apenas 2 meses de acesso (depois você perde tudo)", "Sem tutorial para usar a planilha", "Sem os 5 bônus que valem mais de R$ 200", "Você vai ficar perdido sem orientação"].map(item => (
+                {["Apenas 2 meses de acesso (depois você perde tudo)", "Sem tutorial para usar a planilha", "Sem os 6 bônus que valem mais de R$ 200", "Você vai ficar perdido sem orientação"].map(item => (
                   <li key={item} className="flex items-start"><XCircleIcon />{item}</li>
                 ))}
               </ul>
@@ -120,7 +120,7 @@ export default function OfertaEspecialPage() {
             <div className="bg-green-100 border-2 border-green-600 p-6 rounded-lg shadow-lg animate-fade-in-up hover:shadow-xl transition-shadow" style={{animationDelay: '0.6s'}}>
               <h3 className="text-xl font-bold text-green-700 mb-3">PORQUE VOCÊ DEVE ESCOLHER O PLANO PREMIUM:</h3>
               <ul className="space-y-2 text-green-600">
-                {["Acesso VITALÍCIO", "Tutorial completo com orientação completa", "5 bônus exclusivos", "R$ 54,00 de economia"].map(item => (
+                {["Acesso VITALÍCIO", "Tutorial completo com orientação completa", "6 bônus exclusivos", "R$ 54,00 de economia"].map(item => (
                   <li key={item} className="flex items-start"><CheckCircle2 className="h-5 w-5 mr-2 mt-0.5 shrink-0" />{item}</li>
                 ))}
               </ul>
