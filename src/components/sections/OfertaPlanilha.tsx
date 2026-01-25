@@ -42,7 +42,7 @@ export default function OfertaPlanilha() {
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-6 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-headline text-foreground uppercase">
-            GARANTA O SEU <span className="text-primary">ACESSO!</span>
+            GARANTA O SEU ACESSO!
           </h2>
           <p className="mt-3 text-lg text-muted-foreground font-body">
             Escolha o plano perfeito para transformar sua vida financeira hoje mesmo.
@@ -108,10 +108,15 @@ export default function OfertaPlanilha() {
             <CardContent className="flex-grow px-6">
               <ul className="space-y-2 mt-4">
                 {[
-                  "Planilha de controle financeiro", "Acesso vitalício", "7 dias de garantia",
-                  "Tutorial de como usar a planilha", "Guia de como Não Desistir no Primeiro Mês",
-                  "10 Hábitos Que Estão Afundando Suas Finanças", "Guia Rápido: Como Economizar Ganhando Pouco",
-                  "Método Adeus, Dívidas"
+                  "Planilha da Liberdade",
+                  "Acesso Vitalício",
+                  "7 Dias de Garantia",
+                  "Todas as nossas versões",
+                  "Tutorial de como usar a planilha",
+                  "Como não desistir no primeiro mês",
+                  "Guia de hábitos que te afundam",
+                  "Como economizar ganhando pouco",
+                  "Método adeus dívidas"
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-primary-foreground">
                     <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0 text-primary-foreground" />
