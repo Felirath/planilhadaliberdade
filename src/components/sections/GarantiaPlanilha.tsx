@@ -8,7 +8,7 @@ export default function GarantiaPlanilha() {
     <section className="py-16 md:py-24 bg-primary/10">
       <div className="container mx-auto px-6 md:px-10 text-center">
         <h2 className="text-3xl md:text-4xl font-headline mb-4 md:mb-8 text-foreground">
-          Garantia de <span className="text-primary">7 Dias</span> – Sem Risco Pra Você!
+          Garantia de <span className="text-primary">7 Dias</span> – SEM RISCO PRA VOCÊ!
         </h2>
         <div className="md:flex md:items-center md:gap-8 mb-10 animate-fade-in-up">
           <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
