@@ -1,7 +1,7 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Planilha Liberdade - Domine Seu Dinheiro',
@@ -51,6 +51,13 @@ fbq('track', 'PageView');
       <body className="font-body antialiased" suppressHydrationWarning={true}>
         {children}
         <Toaster />
+        <Script
+          id="utmify-script"
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck
+          data-utmify-prevent-subids
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
