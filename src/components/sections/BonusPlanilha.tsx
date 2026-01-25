@@ -30,7 +30,7 @@ const bonuses = [
   },
   {
     icon: <Users className="h-8 w-8 text-primary" />,
-    title: "MÉTODO ADEUS DÍVIDAS",
+    title: "GUIA: MÉTODO ADEUS DÍVIDAS",
     description: "O passo a passo comprovado para sair das dívidas e construir patrimônio."
   }
 ];
