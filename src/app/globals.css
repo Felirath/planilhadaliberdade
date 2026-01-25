@@ -129,6 +129,10 @@
   background-image: linear-gradient(to right, hsl(var(--primary)), hsl(190, 70%, 60%));
 }
 
+.bg-gradient-dark-green-gold {
+  background-image: linear-gradient(to right, hsl(155, 30%, 13%), hsl(43, 74%, 49%));
+}
+
 .bg-gradient-orange {
   background-image: linear-gradient(to right, hsl(var(--accent)), hsl(20, 95%, 60%));
 }
