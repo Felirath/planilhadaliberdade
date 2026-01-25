@@ -50,7 +50,7 @@ export default function HeroSectionPlanilha() {
           Domine Seu Dinheiro e Saia do <span className="text-red-500">Vermelho</span>
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-          Chega de terminar o mês no vermelho. Descubra pra onde vai o seu dinheiro e recupere o controle AGORA!
+          Chega de terminar o mês no vermelho. Descubra pra onde vai o seu dinheiro e recupere o controle <span className="text-red-500">AGORA!</span>
         </p>
 
         <div
