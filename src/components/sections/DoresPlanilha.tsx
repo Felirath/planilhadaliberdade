@@ -42,15 +42,15 @@ export default function DoresPlanilha() {
           ))}
         </ul>
         <div
-          className="text-xl md:text-2xl font-bold text-center bg-yellow-100 p-6 rounded-lg shadow-xl animate-fade-in-up border border-yellow-300"
+          className="text-xl md:text-2xl font-bold text-center bg-[#182c25] p-6 rounded-lg shadow-xl animate-fade-in-up border border-[#2ac682]/50"
           style={{ animationDelay: `${0.3 + painPoints.length * 0.1}s` }}
         >
-          <p className="flex items-center justify-center text-foreground">
+          <p className="flex items-center justify-center text-gray-200">
             <XCircle className="inline-block h-8 w-8 mr-2 text-red-500 animate-pulse-subtle" />
             Isso não é falta de esforço.
           </p>
           <p className="mt-2">
-            <span className="text-yellow-900 bg-yellow-400 px-3 py-1.5 rounded-lg shadow-md inline-block">É falta de CLAREZA.</span>
+            <span className="text-black bg-[#2ac682] px-3 py-1.5 rounded-lg shadow-md inline-block uppercase font-bold">É FALTA DE CLAREZA.</span>
           </p>
         </div>
       </div>
