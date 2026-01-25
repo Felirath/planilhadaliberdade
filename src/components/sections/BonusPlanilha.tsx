@@ -5,32 +5,32 @@ import { Archive, BookOpen, Zap, Users, HeartHandshake, TrendingUp } from 'lucid
 const bonuses = [
   {
     icon: <Archive className="h-8 w-8 text-primary" />,
-    title: "Todas as nossas versões",
+    title: "TODAS AS NOSSAS VERSÕES",
     description: "Todas as versões anteriores e futuras da Planilha da Liberdade."
   },
   {
     icon: <BookOpen className="h-8 w-8 text-primary" />,
-    title: "Tutorial de Como Usar a Planilha",
+    title: "TUTORIAL DE COMO USAR A PLANILHA",
     description: "Tutorial passo a passo de como utilizar a planilha."
   },
   {
     icon: <HeartHandshake className="h-8 w-8 text-primary" />,
-    title: "Guia: Como Não Desistir no Primeiro Mês",
+    title: "GUIA: COMO NÃO DESISTIR NO PRIMEIRO MÊS",
     description: "Técnicas práticas para criar o hábito de controle financeiro e superar a fase mais difícil."
   },
   {
     icon: <Zap className="h-8 w-8 text-primary" />,
-    title: "10 Hábitos Que Afundam Suas Finanças",
+    title: "10 HÁBITOS QUE AFUNDAM SUAS FINANÇAS",
     description: "Descubra os comportamentos que drenam seu dinheiro e aprenda a eliminá-los."
   },
   {
     icon: <TrendingUp className="h-8 w-8 text-primary" />,
-    title: "Guia Rápido: Economizar Ganhando Pouco",
+    title: "GUIA RÁPIDO: ECONOMIZAR GANHANDO POUCO",
     description: "Estratégias realistas para fazer o dinheiro render mesmo com salário apertado."
   },
   {
     icon: <Users className="h-8 w-8 text-primary" />,
-    title: "Método Adeus Dívidas",
+    title: "MÉTODO ADEUS DÍVIDAS",
     description: "O passo a passo comprovado para sair das dívidas e construir patrimônio."
   }
 ];
