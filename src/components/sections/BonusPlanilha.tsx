@@ -25,7 +25,7 @@ const bonuses = [
   },
   {
     icon: <TrendingUp className="h-8 w-8 text-primary" />,
-    title: "GUIA RÁPIDO: ECONOMIZAR GANHANDO POUCO",
+    title: "GUIA: ECONOMIZAR GANHANDO POUCO",
     description: "Estratégias realistas para fazer o dinheiro render mesmo com salário apertado."
   },
   {
