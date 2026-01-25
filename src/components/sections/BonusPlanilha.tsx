@@ -1,8 +1,13 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { BookOpen, Zap, Users, HeartHandshake, TrendingUp } from 'lucide-react';
+import { Archive, BookOpen, Zap, Users, HeartHandshake, TrendingUp } from 'lucide-react';
 
 const bonuses = [
+  {
+    icon: <Archive className="h-8 w-8 text-primary" />,
+    title: "Versões anteriores",
+    description: "Todas as versões anteriores da Planilha da Liberdade."
+  },
   {
     icon: <BookOpen className="h-8 w-8 text-primary" />,
     title: "Tutorial de Como Usar a Planilha",
@@ -36,7 +41,7 @@ export default function BonusPlanilha() {
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-headline text-secondary-foreground">
-            ⭐ Você Ainda Recebe 5 Bônus <span className="text-yellow-500 font-bold">Exclusivos</span> ⭐
+            ⭐ Você ainda recebe 6 Bônus <span className="font-bold bg-gradient-to-r from-yellow-300 to-yellow-500 text-transparent bg-clip-text">EXCLUSIVOS</span> ⭐
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -62,4 +67,3 @@ export default function BonusPlanilha() {
     </section>
   );
 }
-
