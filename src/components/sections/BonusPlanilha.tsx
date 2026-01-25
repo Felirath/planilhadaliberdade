@@ -20,7 +20,7 @@ const bonuses = [
   },
   {
     icon: <Zap className="h-8 w-8 text-primary" />,
-    title: "10 HÁBITOS QUE AFUNDAM SUAS FINANÇAS",
+    title: "GUIA: 10 HÁBITOS QUE AFUNDAM SUAS FINANÇAS",
     description: "Descubra os comportamentos que drenam seu dinheiro e aprenda a eliminá-los."
   },
   {
@@ -41,7 +41,7 @@ export default function BonusPlanilha() {
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-headline text-secondary-foreground uppercase">
-            ⭐ Você ainda recebe 6 Bônus <span className="font-bold bg-gradient-to-r from-yellow-300 to-yellow-500 text-transparent bg-clip-text">EXCLUSIVOS</span> ⭐
+            ⭐ VOCÊ AINDA RECEBE 6 BÔNUS <span className="font-bold bg-gradient-to-r from-yellow-300 to-yellow-500 text-transparent bg-clip-text">EXCLUSIVOS</span> ⭐
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
