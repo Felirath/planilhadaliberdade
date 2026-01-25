@@ -40,7 +40,7 @@ export default function BonusPlanilha() {
     <section className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-12 animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-headline text-secondary-foreground">
+          <h2 className="text-3xl md:text-4xl font-headline text-secondary-foreground uppercase">
             ⭐ Você ainda recebe 6 Bônus <span className="font-bold bg-gradient-to-r from-yellow-300 to-yellow-500 text-transparent bg-clip-text">EXCLUSIVOS</span> ⭐
           </h2>
         </div>
