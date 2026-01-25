@@ -119,7 +119,11 @@ export default function OfertaPlanilha() {
                   "Método adeus dívidas"
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-primary-foreground">
-                    <Star className="h-4 w-4 mr-2 flex-shrink-0" fill="hsl(var(--primary))" stroke="hsl(var(--primary-foreground))" />
+                    {i < 3 ? (
+                      <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0" />
+                    ) : (
+                      <Star className="h-4 w-4 mr-2 flex-shrink-0" fill="hsl(var(--primary))" stroke="hsl(var(--primary-foreground))" />
+                    )}
                     {feature}
                   </li>
                 ))}
