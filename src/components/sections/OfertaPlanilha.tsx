@@ -2,7 +2,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle2, Shield, LockKeyholeIcon, Flame, TriangleAlertIcon } from 'lucide-react';
+import { CheckCircle2, Shield, LockKeyholeIcon, Flame, TriangleAlertIcon, Star } from 'lucide-react';
 import Link from 'next/link';
 
 const VisaIcon = () => (
@@ -119,7 +119,7 @@ export default function OfertaPlanilha() {
                   "Método adeus dívidas"
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-primary-foreground">
-                    <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0 text-primary-foreground" />
+                    <Star className="h-4 w-4 mr-2 flex-shrink-0" fill="hsl(var(--primary))" stroke="hsl(var(--primary-foreground))" />
                     {feature}
                   </li>
                 ))}
