@@ -28,7 +28,7 @@ export default function ProvaSocialPlanilha() {
   }, [nextSlide]);
 
   return (
-    <section className="py-16 md:py-24 text-primary-foreground" style={{ backgroundColor: '#182c25' }}>
+    <section className="py-16 md:py-24 text-primary-foreground bg-gradient-dark-green-gold">
       <div className="container mx-auto px-6 md:px-10">
         <h2 className="text-3xl md:text-4xl font-headline text-center mb-4 text-primary-foreground">
           Mais de <span className="text-yellow-300">3000 pessoas</span> já começaram sua jornada!
@@ -86,3 +86,4 @@ export default function ProvaSocialPlanilha() {
     </section>
   );
 }
+
