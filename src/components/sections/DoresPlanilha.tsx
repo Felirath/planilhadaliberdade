@@ -14,7 +14,7 @@ export default function DoresPlanilha() {
     <section className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-6 md:px-10">
         <h2 className="text-3xl md:text-4xl font-headline text-center mb-6 text-secondary-foreground animate-fade-in-up">
-          Você Recebe o Salário, Mas Ele <span className="text-red-500">Some?</span> 😰
+          O salário entra, mas <span className="text-red-500">nunca</span> sobra nada no final?
         </h2>
         <div className="max-w-lg mx-auto mb-12 rounded-lg shadow-xl overflow-hidden animate-fade-in-up group hover:scale-105 transition-transform duration-300" style={{animationDelay: '0.2s'}}>
           <Image
