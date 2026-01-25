@@ -41,8 +41,8 @@ export default function OfertaPlanilha() {
     <section id="oferta" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-6 animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-headline text-foreground">
-            Garanta o Seu <span className="text-primary">Acesso!</span>
+          <h2 className="text-3xl md:text-4xl font-headline text-foreground uppercase">
+            GARANTA O SEU <span className="text-primary">ACESSO!</span>
           </h2>
           <p className="mt-3 text-lg text-muted-foreground font-body">
             Escolha o plano perfeito para transformar sua vida financeira hoje mesmo.
