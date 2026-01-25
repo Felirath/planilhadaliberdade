@@ -18,7 +18,7 @@ export default function SolucaoPlanilha() {
           <div className="order-1 md:order-1 animate-fade-in-up group" style={{ animationDelay: '0.4s' }}>
             <div className="rounded-lg shadow-xl overflow-hidden group-hover:scale-105 transform transition-transform duration-300 border-2 border-primary/20">
               <Image
-                src="https://i.imgur.com/aBKrh4m.png"
+                src="https://i.imgur.com/23wGq6g.png"
                 alt="Mockup da Planilha Liberdade"
                 width={600}
                 height={450}
