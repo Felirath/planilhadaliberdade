@@ -10,10 +10,10 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
           <Image
-            src="https://sua-melhor-versao.com/imagens/Logo.png"
-            alt="Planilha Liberdade Logo"
-            width={150} 
-            height={150} 
+            src="https://i.imgur.com/AJlCe1k.png"
+            alt="Liberdade Financeira Logo"
+            width={160} 
+            height={40} 
             className="rounded-sm"
             data-ai-hint="company logo"
           />
@@ -32,4 +32,3 @@ export default function Header() {
     </header>
   );
 }
-

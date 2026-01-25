@@ -9,8 +9,8 @@ export default function FooterPlanilha() {
         <div className="flex flex-col sm:flex-row justify-between items-center">
             <div className="mb-4 sm:mb-0">
                 <Image
-                    src="https://sua-melhor-versao.com/imagens/logo%20branca.png"
-                    alt="Planilha Liberdade Logo Branca"
+                    src="https://i.imgur.com/AJlCe1k.png"
+                    alt="Liberdade Financeira Logo"
                     width={120}
                     height={30}
                     data-ai-hint="company white logo"
