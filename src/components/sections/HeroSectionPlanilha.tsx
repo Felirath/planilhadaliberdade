@@ -1,8 +1,7 @@
-
 'use client';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import VSLPlayer from '@/components/common/VSLPlayer';
+import Script from 'next/script';
 import { ShieldCheck, ShoppingCart, Flame, LockKeyhole } from 'lucide-react';
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
@@ -38,11 +37,6 @@ const PixIcon = () => (
 
 
 export default function HeroSectionPlanilha() {
-  const videoId = "684761e50eee7072de674c8f";
-  const playerScriptSrc = "https://scripts.converteai.net/0b110d1c-1188-49ac-8ddf-f6c4b4be375e/players/684761e50eee7072de674c8f/player.js";
-  const thumbnailSrc = "https://images.converteai.net/0b110d1c-1188-49ac-8ddf-f6c4b4be375e/players/684761e50eee7072de674c8f/thumbnail.jpg";
-
-
   return (
     <section className="py-12 md:py-20 bg-gradient-dark-green-gold text-primary-foreground">
       <div className="container mx-auto px-6 md:px-10 text-center">
@@ -57,11 +51,12 @@ export default function HeroSectionPlanilha() {
             className="max-w-2xl mx-auto mb-10 rounded-lg shadow-2xl overflow-hidden animate-fade-in-up"
             style={{ animationDelay: '0.5s' }}
         >
-          <VSLPlayer
-            videoId={videoId}
-            playerScriptSrc={playerScriptSrc}
-            thumbnailSrc={thumbnailSrc}
-          />
+          <div dangerouslySetInnerHTML={{ __html: `
+            <style>wistia-player[media-id='uyy6sy3t7f']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/uyy6sy3t7f/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style>
+            <wistia-player media-id="uyy6sy3t7f" aspect="0.5625"></wistia-player>
+            `}} />
+            <Script src="https://fast.wistia.com/player.js" strategy="lazyOnload" />
+            <Script src="https://fast.wistia.com/embed/uyy6sy3t7f.js" strategy="lazyOnload" type="module" />
         </div>
 
         <Card className="max-w-xs mx-auto bg-card text-card-foreground shadow-xl p-4 md:p-6 animate-fade-in-up rounded-2xl border border-primary/20" style={{ animationDelay: '0.7s' }}>
@@ -79,7 +74,7 @@ export default function HeroSectionPlanilha() {
             >
               <Link href="#oferta">
                 <ShoppingCart className="mr-2 h-5 w-5" />
-                Obter Agora
+                BOTÃO
               </Link>
             </Button>
 
