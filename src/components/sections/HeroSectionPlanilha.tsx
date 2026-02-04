@@ -74,7 +74,7 @@ export default function HeroSectionPlanilha() {
             >
               <Link href="#oferta">
                 <ShoppingCart className="mr-2 h-5 w-5" />
-                BOTÃO
+                Obter Agora
               </Link>
             </Button>
 

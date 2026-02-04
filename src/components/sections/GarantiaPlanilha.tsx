@@ -13,7 +13,7 @@ export default function GarantiaPlanilha() {
         <div className="md:flex md:items-center md:gap-8 mb-10 animate-fade-in-up">
           <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
             <Image
-              src="https://sua-melhor-versao.com/imagens/selo.png"
+              src="https://i.imgur.com/RsHwVSa.png"
               alt="Selo de Garantia 7 Dias"
               width={200}
               height={200}

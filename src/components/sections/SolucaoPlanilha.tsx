@@ -49,7 +49,7 @@ export default function SolucaoPlanilha() {
             >
               <div className="text-xl font-bold text-foreground text-center bg-card p-4 rounded-lg">
                 <p>🧠 Mesmo que você nunca</p>
-                <p>tenha usado uma planilha na vida.</p>
+                <p>tenha usado uma planilha na vida</p>
               </div>
             </div>
           </div>

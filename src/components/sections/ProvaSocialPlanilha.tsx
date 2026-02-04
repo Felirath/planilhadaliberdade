@@ -5,10 +5,10 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import React, { useState, useEffect, useCallback } from 'react';
 
 const testimonialsImages = [
-  "https://sua-melhor-versao.com/imagens/wpp1.png",
-  "https://sua-melhor-versao.com/imagens/wpp%202.png",
-  "https://sua-melhor-versao.com/imagens//insta%202.png",
-  "https://sua-melhor-versao.com/imagens/insta%201.png"
+  "https://i.imgur.com/cvINIoh.png",
+  "https://i.imgur.com/T6mDbNV.png",
+  "https://i.imgur.com/ZRzgkTs.png",
+  "https://i.imgur.com/2jLMDjM.png"
 ];
 
 export default function ProvaSocialPlanilha() {
