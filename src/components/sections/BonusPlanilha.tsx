@@ -41,7 +41,7 @@ export default function BonusPlanilha() {
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-12 animate-fade-in-up">
           <Star className="h-10 w-10 text-accent fill-accent mx-auto mb-4" />
-          <h2 className="text-3xl md:text-4xl font-headline text-secondary-foreground uppercase">
+          <h2 className="text-3xl md:text-4xl font-gagalin text-secondary-foreground uppercase">
             VOCÊ AINDA RECEBE 6 BÔNUS <span className="font-bold text-gradient-gold">EXCLUSIVOS</span>
           </h2>
         </div>
