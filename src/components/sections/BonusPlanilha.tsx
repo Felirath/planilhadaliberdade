@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Archive, BookOpen, Zap, Users, HeartHandshake, TrendingUp } from 'lucide-react';
+import { Archive, BookOpen, Zap, Users, HeartHandshake, TrendingUp, Star } from 'lucide-react';
 
 const bonuses = [
   {
@@ -40,8 +40,9 @@ export default function BonusPlanilha() {
     <section className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-12 animate-fade-in-up">
+          <Star className="h-10 w-10 text-accent fill-accent mx-auto mb-4" />
           <h2 className="text-3xl md:text-4xl font-headline text-secondary-foreground uppercase">
-            ⭐ VOCÊ AINDA RECEBE 6 BÔNUS <span className="font-bold text-gradient-gold">EXCLUSIVOS</span> ⭐
+            VOCÊ AINDA RECEBE 6 BÔNUS <span className="font-bold text-gradient-gold">EXCLUSIVOS</span>
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -58,7 +59,7 @@ export default function BonusPlanilha() {
                 <CardTitle className="font-headline text-xl text-primary">{bonus.title}</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <CardDescription className="font-body text-muted-foreground">{bonus.description}</CardDescription>
+                <CardDescription className="font-body text-card-foreground/80">{bonus.description}</CardDescription>
               </CardContent>
             </Card>
           ))}

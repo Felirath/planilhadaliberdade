@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function FooterPlanilha() {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="py-8 px-6 md:px-10 bg-foreground text-background text-center">
+    <footer className="py-8 px-6 md:px-10 bg-secondary text-secondary-foreground text-center">
       <div className="container mx-auto">
         <div className="flex flex-col sm:flex-row justify-between items-center">
             <div className="mb-4 sm:mb-0">
