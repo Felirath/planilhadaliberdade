@@ -40,10 +40,10 @@ export default function HeroSectionPlanilha() {
     <section className="py-12 md:py-20 bg-gradient-dark-green text-foreground">
       <div className="container mx-auto px-6 md:px-10 text-center">
         <h1 className="uppercase text-4xl md:text-5xl lg:text-6xl font-headline mb-4 animate-scale-in-fade-in" style={{ animationDelay: '0.1s' }}>
-          Domine Seu Dinheiro e Saia do <span className="text-destructive">Vermelho</span>
+          DESCUBRA PRA ONDE SEU DINHEIRO ESTÁ INDO EM <span className="text-gradient-gold">MENOS DE 10 MINUTOS</span>
         </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-          Chega de terminar o mês no vermelho. Descubra pra onde vai o seu dinheiro e recupere o controle <span className="text-destructive font-bold">AGORA!</span>
+        <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+          Recupere o controle financeiro com a planilha que já ajudou <span className="text-gradient-gold">mais de 3000 pessoas</span> a saírem do sufoco
         </p>
 
         <div
