@@ -14,7 +14,7 @@ export default function DoresPlanilha() {
     <section className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-6 md:px-10">
         <h2 className="text-3xl md:text-4xl font-headline text-center mb-6 text-secondary-foreground animate-fade-in-up">
-          O salário entra, <span className="text-red-500">mas nunca sobra nada no final?</span>
+          O salário entra, <span className="text-destructive">mas nunca sobra nada no final?</span>
         </h2>
         <div className="max-w-lg mx-auto mb-12 rounded-lg shadow-xl overflow-hidden animate-fade-in-up group hover:scale-105 transition-transform duration-300" style={{animationDelay: '0.2s'}}>
           <Image
@@ -42,15 +42,15 @@ export default function DoresPlanilha() {
           ))}
         </ul>
         <div
-          className="text-xl md:text-2xl font-bold text-center bg-gradient-dark-green-gold p-6 rounded-lg shadow-xl animate-fade-in-up border border-[#2ac682]/50"
+          className="text-xl md:text-2xl font-bold text-center bg-gradient-dark-green p-6 rounded-lg shadow-xl animate-fade-in-up border border-primary/20"
           style={{ animationDelay: `${0.3 + painPoints.length * 0.1}s` }}
         >
-          <p className="flex items-center justify-center text-gray-200">
-            <XCircle className="inline-block h-8 w-8 mr-2 text-red-500 animate-pulse-subtle" />
+          <p className="flex items-center justify-center text-foreground">
+            <XCircle className="inline-block h-8 w-8 mr-2 text-destructive animate-pulse-subtle" />
             Isso não é falta de esforço.
           </p>
           <p className="mt-2">
-            <span className="text-black bg-[#2ac682] px-3 py-1.5 rounded-lg shadow-md inline-block uppercase font-bold">É FALTA DE CLAREZA.</span>
+            <span className="text-primary-foreground bg-primary px-3 py-1.5 rounded-lg shadow-md inline-block uppercase font-bold">É FALTA DE CLAREZA.</span>
           </p>
         </div>
       </div>

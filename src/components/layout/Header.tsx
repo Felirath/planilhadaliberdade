@@ -6,7 +6,7 @@ import { ShoppingCart } from 'lucide-react';
 
 export default function Header() {
   return (
-    <header className="py-4 px-6 md:px-10 bg-[#2e3138] sticky top-0 z-50 border-b border-white/10">
+    <header className="py-4 px-6 md:px-10 bg-card sticky top-0 z-50 border-b border-border">
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
           <Image
@@ -20,7 +20,7 @@ export default function Header() {
         </Link>
         <Button 
           asChild 
-          className="bg-gradient-orange hover:opacity-90 text-accent-foreground font-semibold shadow-md hover:scale-105 transform transition-transform duration-300"
+          className="bg-gradient-gold hover:opacity-90 text-accent-foreground font-semibold shadow-md hover:scale-105 transform transition-transform duration-300"
           size="lg"
         >
           <Link href="#oferta">

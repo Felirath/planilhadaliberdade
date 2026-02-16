@@ -6,32 +6,31 @@ import { CheckCircle2, Shield, LockKeyholeIcon, Flame, TriangleAlertIcon, Star }
 import Link from 'next/link';
 
 const VisaIcon = () => (
-  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
-    <rect width="60" height="40" rx="5" fill="#0057A0"/>
-    <text x="30" y="27" fontFamily="Arial, sans-serif" fontSize="20" fill="white" textAnchor="middle" fontWeight="bold">VISA</text>
+  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto text-gray-300">
+    <rect width="60" height="40" rx="5" fill="currentColor"/>
+    <text x="30" y="27" fontFamily="Arial, sans-serif" fontSize="20" fill="black" textAnchor="middle" fontWeight="bold">VISA</text>
   </svg>
 );
 
 const MastercardIcon = () => (
   <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
-    <rect width="60" height="40" rx="5" fill="#EB001B"/>
+    <rect width="60" height="40" rx="5" fill="#222"/>
     <circle cx="22" cy="20" r="12" fill="#F79E1B"/>
     <circle cx="38" cy="20" r="12" fill="#FF5F00" opacity="0.8"/>
-    <text x="30" y="35" fontFamily="Arial, sans-serif" fontSize="8" fill="white" textAnchor="middle">mastercard</text>
   </svg>
 );
 
 const GenericCardIcon = () => (
-  <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
-    <rect width="60" height="40" rx="5" fill="#4A5568"/>
-    <rect x="5" y="25" width="30" height="5" rx="2" fill="#CBD5E0"/>
-    <rect x="5" y="8" width="10" height="7" rx="1" fill="#CBD5E0"/>
+    <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto text-gray-300">
+    <rect width="60" height="40" rx="5" fill="currentColor"/>
+    <rect x="5" y="25" width="30" height="5" rx="2" fill="#111"/>
+    <rect x="5" y="8" width="10" height="7" rx="1" fill="#111"/>
   </svg>
 );
 
 const PixTextIcon = () => (
   <svg width="40" height="25" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" className="h-6 w-auto">
-    <text x="30" y="28" fontFamily="Arial, sans-serif" fontSize="24" fill="#24bc6e" textAnchor="middle" fontWeight="bold">PIX</text>
+    <text x="30" y="28" fontFamily="Arial, sans-serif" fontSize="24" fill="hsl(var(--primary))" textAnchor="middle" fontWeight="bold">PIX</text>
   </svg>
 );
 
@@ -50,7 +49,7 @@ export default function OfertaPlanilha() {
         </div>
 
         <div className="max-w-md mx-auto my-6 animate-fade-in-up" style={{animationDelay: '0.1s'}}>
-            <Badge className="bg-gradient-orange text-accent-foreground text-sm py-2 px-4 shadow-md w-full justify-center animate-pulse-subtle">
+            <Badge className="bg-gradient-gold text-accent-foreground text-sm py-2 px-4 shadow-md w-full justify-center animate-pulse-subtle">
               <TriangleAlertIcon className="mr-2 h-5 w-5" /> Atenção: valor promocional de R$19,90 por tempo limitado!
             </Badge>
         </div>
@@ -67,8 +66,8 @@ export default function OfertaPlanilha() {
             <CardContent className="flex-grow px-6">
               <ul className="space-y-2 mt-4">
                 {["Planilha da Liberdade", "2 Meses de Acesso", "7 Dias de Garantia"].map((feature, i) => (
-                  <li key={i} className="flex items-center font-body text-sm text-card-foreground/80">
-                    <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0 text-gray-500" />
+                  <li key={i} className="flex items-center font-body text-sm text-muted-foreground">
+                    <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0 text-muted-foreground" />
                     {feature}
                   </li>
                 ))}
@@ -77,8 +76,8 @@ export default function OfertaPlanilha() {
             <CardFooter className="px-6 pb-6">
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="w-full shadow-md text-lg bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold border-gray-300 rounded-lg h-12"
+                variant="secondary" 
+                className="w-full shadow-md text-lg font-semibold rounded-lg h-12"
                 asChild
               >
                 <Link href="/oferta-especial">Obter Agora</Link>
@@ -88,10 +87,10 @@ export default function OfertaPlanilha() {
 
           {/* Plano Premium */}
           <Card 
-            className="flex flex-col shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in-up bg-primary text-primary-foreground rounded-xl relative lg:scale-105 neon-border-primary"
+            className="flex flex-col shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in-up bg-primary text-primary-foreground rounded-xl relative lg:scale-105 neon-border-accent"
             style={{ animationDelay: `0.3s` }}
           >
-            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-orange text-accent-foreground text-xs font-semibold py-1 px-3 shadow-md rounded-full">
+            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-gold text-accent-foreground text-xs font-semibold py-1 px-3 shadow-md rounded-full">
               <Flame className="mr-1 h-3 w-3" /> MAIS POPULAR
             </Badge>
             <CardHeader className="text-left pt-10 px-6">
@@ -100,7 +99,7 @@ export default function OfertaPlanilha() {
                 <span className="text-lg line-through text-primary-foreground/70">R$ 69,90</span>
                 <div className="flex flex-col items-center gap-1">
                     <span className="text-4xl font-bold">R$19,90</span>
-                    <Badge variant="default" className="bg-yellow-400 text-yellow-900 text-xs font-semibold px-2 py-0.5 rounded-full">ECONOMIA DE R$ 50,00</Badge>
+                    <Badge variant="default" className="bg-accent text-accent-foreground text-xs font-semibold px-2 py-0.5 rounded-full">ECONOMIA DE R$ 50,00</Badge>
                 </div>
                 <p className="text-xs text-primary-foreground/80 mt-1">Melhor custo-benefício</p>
               </div>
@@ -122,7 +121,7 @@ export default function OfertaPlanilha() {
                     {i < 3 ? (
                       <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0" />
                     ) : (
-                      <Star className="h-4 w-4 mr-2 flex-shrink-0" fill="hsl(var(--primary))" stroke="hsl(var(--primary-foreground))" />
+                      <Star className="h-4 w-4 mr-2 flex-shrink-0" fill="currentColor" stroke="hsl(var(--primary-foreground))" />
                     )}
                     {feature}
                   </li>
@@ -132,7 +131,7 @@ export default function OfertaPlanilha() {
             <CardFooter className="px-6 pb-6">
               <Button 
                 size="lg" 
-                className="w-full shadow-md text-lg bg-gradient-yellow hover:opacity-95 text-black font-bold rounded-lg h-12"
+                className="w-full shadow-md text-lg bg-gradient-gold hover:opacity-95 text-accent-foreground font-bold rounded-lg h-12"
                 asChild
               >
                 <Link href="https://lastlink.com/p/C1F28CAFF/checkout-payment/" target="_blank">
@@ -151,10 +150,10 @@ export default function OfertaPlanilha() {
                 <PixTextIcon />
             </div>
             <div className="flex flex-wrap justify-center items-center gap-2">
-                <Badge variant="outline" className="py-1.5 px-3 text-xs bg-green-100 text-green-700 border-green-300 rounded-md">
+                <Badge variant="secondary" className="py-1.5 px-3 text-xs rounded-md">
                     <Shield className="mr-1.5 h-4 w-4"/> Garantia 7 dias
                 </Badge>
-                <Badge variant="outline" className="py-1.5 px-3 text-xs bg-gray-100 text-gray-700 border-gray-300 rounded-md">
+                <Badge variant="secondary" className="py-1.5 px-3 text-xs rounded-md">
                     <LockKeyholeIcon className="mr-1.5 h-4 w-4"/> Pagamento Seguro
                 </Badge>
             </div>

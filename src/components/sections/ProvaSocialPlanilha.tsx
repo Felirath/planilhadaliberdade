@@ -28,12 +28,12 @@ export default function ProvaSocialPlanilha() {
   }, [nextSlide]);
 
   return (
-    <section className="py-16 md:py-24 text-primary-foreground bg-gradient-dark-green-gold">
+    <section className="py-16 md:py-24 text-foreground bg-gradient-dark-green">
       <div className="container mx-auto px-6 md:px-10">
-        <h2 className="text-3xl md:text-4xl font-headline text-center mb-4 text-primary-foreground">
-          Mais de <span className="bg-gradient-to-r from-yellow-300 to-yellow-500 text-transparent bg-clip-text">3000 pessoas</span> já começaram suas jornadas!
+        <h2 className="text-3xl md:text-4xl font-headline text-center mb-4 text-foreground">
+          Mais de <span className="text-gradient-gold">3000 pessoas</span> já começaram suas jornadas!
         </h2>
-        <p className="text-lg text-center text-primary-foreground/80 mb-12">
+        <p className="text-lg text-center text-muted-foreground mb-12">
           Veja o que nossos clientes estão dizendo sobre os resultados obtidos:
         </p>
         
@@ -59,14 +59,14 @@ export default function ProvaSocialPlanilha() {
           </div>
           <button 
             onClick={prevSlide} 
-            className="absolute top-1/2 left-2 md:-left-12 -translate-y-1/2 transform bg-card/80 hover:bg-card text-foreground p-3 rounded-full shadow-md z-10 hover:scale-110 transition-all"
+            className="absolute top-1/2 left-2 md:-left-12 -translate-y-1/2 transform bg-background/50 hover:bg-background text-foreground p-3 rounded-full shadow-md z-10 hover:scale-110 transition-all"
             aria-label="Previous testimonial"
           >
             <ChevronLeft className="h-6 w-6" />
           </button>
           <button 
             onClick={nextSlide} 
-            className="absolute top-1/2 right-2 md:-right-12 -translate-y-1/2 transform bg-card/80 hover:bg-card text-foreground p-3 rounded-full shadow-md z-10 hover:scale-110 transition-all"
+            className="absolute top-1/2 right-2 md:-right-12 -translate-y-1/2 transform bg-background/50 hover:bg-background text-foreground p-3 rounded-full shadow-md z-10 hover:scale-110 transition-all"
             aria-label="Next testimonial"
           >
             <ChevronRight className="h-6 w-6" />
@@ -76,7 +76,7 @@ export default function ProvaSocialPlanilha() {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all ${currentIndex === index ? 'bg-primary-foreground scale-125' : 'bg-primary-foreground/50 hover:bg-primary-foreground/70'}`}
+                className={`w-3 h-3 rounded-full transition-all ${currentIndex === index ? 'bg-foreground scale-125' : 'bg-foreground/50 hover:bg-foreground/70'}`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}

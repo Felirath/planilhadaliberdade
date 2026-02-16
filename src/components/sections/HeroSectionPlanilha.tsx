@@ -8,43 +8,42 @@ import { Badge } from '@/components/ui/badge';
 
 
 const VisaIcon = () => (
-  <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
-    <rect width="38" height="24" rx="3" fill="#2563eb"/>
-    <rect x="4" y="16" width="10" height="3" rx="1" fill="white" fillOpacity="0.7"/>
-    <rect x="4" y="5" width="6" height="4" rx="1" fill="white" fillOpacity="0.5"/>
+  <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto text-gray-300">
+    <rect width="38" height="24" rx="3" fill="currentColor" />
+    <text x="19" y="16" textAnchor="middle" fontSize="10" fill="#111" fontWeight="bold">VISA</text>
   </svg>
 );
 
 const MastercardIcon = () => (
   <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
-    <rect width="38" height="24" rx="3" fill="#dc2626"/>
+    <rect width="38" height="24" rx="3" fill="#222" />
     <circle cx="12" cy="12" r="7" fill="#F79E1B"/>
     <circle cx="26" cy="12" r="7" fill="#FF5F00" opacity="0.8"/>
   </svg>
 );
 
 const GenericCardIcon = () => (
-  <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto">
-    <rect width="38" height="24" rx="3" fill="#4A5568"/>
-    <rect x="4" y="16" width="10" height="3" rx="1" fill="#CBD5E0"/>
-    <rect x="4" y="5" width="6" height="4" rx="1" fill="#CBD5E0"/>
+  <svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" className="h-7 w-auto text-gray-300">
+    <rect width="38" height="24" rx="3" fill="currentColor"/>
+    <rect x="4" y="16" width="10" height="3" rx="1" fill="#111" />
+    <rect x="4" y="5" width="6" height="4" rx="1" fill="#111" />
   </svg>
 );
 
 const PixIcon = () => (
-  <span className="text-lg font-semibold text-green-600">PIX</span>
+  <span className="text-lg font-semibold text-primary">PIX</span>
 );
 
 
 export default function HeroSectionPlanilha() {
   return (
-    <section className="py-12 md:py-20 bg-gradient-dark-green-gold text-primary-foreground">
+    <section className="py-12 md:py-20 bg-gradient-dark-green text-foreground">
       <div className="container mx-auto px-6 md:px-10 text-center">
         <h1 className="uppercase text-4xl md:text-5xl lg:text-6xl font-headline mb-4 animate-scale-in-fade-in" style={{ animationDelay: '0.1s' }}>
-          Domine Seu Dinheiro e Saia do <span className="text-red-500">Vermelho</span>
+          Domine Seu Dinheiro e Saia do <span className="text-destructive">Vermelho</span>
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-          Chega de terminar o mês no vermelho. Descubra pra onde vai o seu dinheiro e recupere o controle <span className="text-red-500 font-bold">AGORA!</span>
+          Chega de terminar o mês no vermelho. Descubra pra onde vai o seu dinheiro e recupere o controle <span className="text-destructive font-bold">AGORA!</span>
         </p>
 
         <div
@@ -59,7 +58,7 @@ export default function HeroSectionPlanilha() {
             <Script src="https://fast.wistia.com/embed/uyy6sy3t7f.js" strategy="lazyOnload" type="module" />
         </div>
 
-        <Card className="max-w-xs mx-auto bg-card text-card-foreground shadow-xl p-4 md:p-6 animate-fade-in-up rounded-2xl border border-primary/20" style={{ animationDelay: '0.7s' }}>
+        <Card className="max-w-xs mx-auto bg-card text-card-foreground shadow-xl p-4 md:p-6 animate-fade-in-up rounded-2xl border border-border" style={{ animationDelay: '0.7s' }}>
           <CardContent className="p-0 text-center">
             <Badge className="mb-6 py-1.5 px-3 text-sm bg-accent text-accent-foreground font-semibold rounded-full animate-pulse-subtle">
               <Flame className="h-4 w-4 mr-1" /> OFERTA LIMITADA - ÚLTIMAS HORAS

@@ -41,14 +41,14 @@ export default function BonusPlanilha() {
       <div className="container mx-auto px-6 md:px-10">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-headline text-secondary-foreground uppercase">
-            ⭐ VOCÊ AINDA RECEBE 6 BÔNUS <span className="font-bold bg-gradient-to-r from-yellow-300 to-yellow-500 text-transparent bg-clip-text">EXCLUSIVOS</span> ⭐
+            ⭐ VOCÊ AINDA RECEBE 6 BÔNUS <span className="font-bold text-gradient-gold">EXCLUSIVOS</span> ⭐
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {bonuses.map((bonus, index) => (
             <Card 
               key={index} 
-              className="shadow-xl group hover:scale-105 transform transition-all duration-300 ease-in-out animate-fade-in-up bg-primary/10 text-card-foreground border border-primary/30" 
+              className="shadow-xl group hover:scale-105 transform transition-all duration-300 ease-in-out animate-fade-in-up bg-card text-card-foreground border border-border hover:border-primary/50" 
               style={{ animationDelay: `${0.2 + index * 0.1}s` }}
             >
               <CardHeader className="items-center text-center">
