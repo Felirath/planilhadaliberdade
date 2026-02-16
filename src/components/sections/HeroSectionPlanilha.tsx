@@ -39,7 +39,7 @@ export default function HeroSectionPlanilha() {
   return (
     <section className="py-12 md:py-20 bg-gradient-dark-green text-foreground">
       <div className="container mx-auto px-6 md:px-10 text-center">
-        <h1 className="uppercase text-4xl md:text-5xl lg:text-6xl font-headline mb-4 animate-scale-in-fade-in" style={{ animationDelay: '0.1s' }}>
+        <h1 className="uppercase text-4xl md:text-5xl lg:text-6xl font-gagalin mb-4 animate-scale-in-fade-in" style={{ animationDelay: '0.1s' }}>
           DESCUBRA PRA ONDE SEU DINHEIRO ESTÁ INDO EM <span className="text-gradient-gold">MENOS DE 10 MINUTOS</span>
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>

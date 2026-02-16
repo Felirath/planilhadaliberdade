@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         body: ['Open Sans', 'sans-serif'],
         headline: ['Roboto', 'sans-serif'],
+        gagalin: ['Gagalin', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
