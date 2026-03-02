@@ -1,4 +1,3 @@
-
 'use client';
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
@@ -111,7 +110,7 @@ export default function OfertaEspecialPage() {
             <div className="bg-destructive/10 border-2 border-destructive p-6 rounded-lg shadow-lg animate-fade-in-up hover:shadow-xl transition-shadow" style={{animationDelay: '0.5s'}}>
               <h3 className="text-xl font-bold text-destructive mb-3">Por que você NÃO deve escolher o básico:</h3>
               <ul className="space-y-2 text-destructive">
-                {["Apenas 1 mês de acesso (depois você perde tudo)", "Sem tutorial para usar a planilha", "Sem os 6 bônus que valem mais de R$ 200", "Você vai ficar perdido sem orientação"].map(item => (
+                {["Apenas 1 mês de acesso (depois você perde tudo)", "Sem tutorial para usar a planilha", "Sem os 9 bônus que valem mais de R$ 200", "Você vai ficar perdido sem orientação"].map(item => (
                   <li key={item} className="flex items-start"><XCircleIcon />{item}</li>
                 ))}
               </ul>
@@ -119,7 +118,7 @@ export default function OfertaEspecialPage() {
             <div className="bg-primary/10 border-2 border-primary p-6 rounded-lg shadow-lg animate-fade-in-up hover:shadow-xl transition-shadow" style={{animationDelay: '0.6s'}}>
               <h3 className="text-xl font-bold text-primary mb-3">PORQUE VOCÊ DEVE ESCOLHER O PLANO PREMIUM:</h3>
               <ul className="space-y-2 text-primary">
-                {["Acesso VITALÍCIO", "Tutorial completo com direcionamento", "6 bônus exclusivos", "R$ 50,00 de economia"].map(item => (
+                {["Acesso VITALÍCIO", "Tutorial completo com direcionamento", "9 bônus exclusivos", "R$ 50,00 de economia"].map(item => (
                   <li key={item} className="flex items-start"><CheckCircle2 className="h-5 w-5 mr-2 mt-0.5 shrink-0" />{item}</li>
                 ))}
               </ul>
@@ -134,7 +133,7 @@ export default function OfertaEspecialPage() {
               <p className="text-xl line-through text-primary-foreground/70">De R$ 77,90</p>
               <p className="text-2xl line-through text-destructive/80">Por R$ 27,90</p>
               <p className="text-xl md:text-2xl font-bold text-primary-foreground/90 mt-2">AGORA:</p>
-              <p className="text-5xl font-bold my-1 text-accent">R$ 15,90</p>
+              <p className="text-5xl font-bold my-1 text-accent">R$ 19,90</p>
               <Button 
                 size="lg" 
                 className="w-full text-xl font-bold bg-gradient-gold hover:opacity-90 text-accent-foreground shadow-lg mt-6 mb-4"
