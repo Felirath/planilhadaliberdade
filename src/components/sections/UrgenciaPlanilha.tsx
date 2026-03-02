@@ -71,7 +71,7 @@ export default function UrgenciaPlanilha() {
             asChild
           >
             <Link href="https://lastlink.com/p/C1F28CAFF/checkout-payment/" target="_blank">
-              👉 QUERO AGORA! <ArrowRight className="ml-2 h-6 w-6" />
+              QUERO AGORA! <ArrowRight className="ml-2 h-6 w-6" />
             </Link>
           </Button>
         
