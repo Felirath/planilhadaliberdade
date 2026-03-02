@@ -29,11 +29,11 @@ export default function SolucaoPlanilha() {
             </div>
           </div>
           <div className="order-2 md:order-2 space-y-6 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <h2 className="text-3xl md:text-4xl font-gagalin text-foreground text-center md:text-left animate-fade-in-up mb-6">
-              Conheça a <span className="text-gradient-gold">Planilha Liberdade</span>
+            <h2 className="text-3xl md:text-5xl font-gagalin text-foreground text-center md:text-left animate-fade-in-up mb-6 uppercase leading-tight">
+              CONHEÇA A <span className="text-gradient-gold">PLANILHA DA LIBERDADE</span>
             </h2>
             <p className="text-lg text-muted-foreground font-body">
-              Uma ferramenta simples e poderosa para quem está afogado em dívidas ou <strong className="text-primary font-bold">quer recuperar o controle da própria vida financeira.</strong>
+              Uma ferramenta simples e poderosa para quem está afogado em dívidas ou <strong className="text-gradient-gold font-bold">quer recuperar o controle da própria vida financeira.</strong>
             </p>
             <ul className="space-y-3">
               {benefits.map((benefit, index) => (
