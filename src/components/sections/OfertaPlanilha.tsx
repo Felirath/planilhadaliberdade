@@ -110,6 +110,7 @@ export default function OfertaPlanilha() {
                   "Planilha da Liberdade",
                   "Acesso Vitalício",
                   "7 Dias de Garantia",
+                  "Suporte Especializado",
                   "Todas as nossas versões",
                   "Tutorial de como usar a planilha",
                   "Como não desistir no primeiro mês",
@@ -118,7 +119,7 @@ export default function OfertaPlanilha() {
                   "Método adeus dívidas"
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-primary-foreground">
-                    {i < 3 ? (
+                    {i < 4 ? (
                       <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0" />
                     ) : (
                       <Star className="h-4 w-4 mr-2 flex-shrink-0" fill="currentColor" stroke="hsl(var(--primary-foreground))" />
