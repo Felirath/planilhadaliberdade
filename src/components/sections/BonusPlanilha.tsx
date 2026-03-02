@@ -45,7 +45,7 @@ const bonuses = [
   },
   {
     icon: <LineChart className="h-8 w-8 text-primary" />,
-    title: "GUIA DE AÇÕES SECRETAS",
+    title: "GUIA: AÇÕES SECRETAS PARA 2026",
     description: "Seu guia definitivo de ações secretas supervalorizadas que vão explodir em 2026."
   }
 ];

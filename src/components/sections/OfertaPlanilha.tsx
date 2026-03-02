@@ -117,7 +117,7 @@ export default function OfertaPlanilha() {
                   "Guia de hábitos que te afundam",
                   "Como economizar ganhando pouco",
                   "Método adeus dívidas",
-                  "Guia de ações secretas"
+                  "Guia: Ações secretas para 2026"
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-primary-foreground">
                     {i < 4 ? (
