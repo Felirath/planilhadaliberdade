@@ -50,7 +50,7 @@ export default function OfertaPlanilha() {
 
         <div className="max-w-md mx-auto my-6 animate-fade-in-up" style={{animationDelay: '0.1s'}}>
             <Badge className="bg-gradient-gold text-accent-foreground text-sm py-2 px-4 shadow-md w-full justify-center animate-pulse-subtle">
-              <TriangleAlertIcon className="mr-2 h-5 w-5" /> Atenção: valor promocional de R$19,90 por tempo limitado!
+              <TriangleAlertIcon className="mr-2 h-5 w-5" /> Atenção: valor promocional de R$27,90 por tempo limitado!
             </Badge>
         </div>
         
@@ -65,7 +65,7 @@ export default function OfertaPlanilha() {
             </CardHeader>
             <CardContent className="flex-grow px-6">
               <ul className="space-y-2 mt-4">
-                {["Planilha da Liberdade", "2 Meses de Acesso", "7 Dias de Garantia"].map((feature, i) => (
+                {["Planilha da Liberdade", "1 Mês de Acesso", "7 Dias de Garantia"].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-muted-foreground">
                     <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0 text-muted-foreground" />
                     {feature}
@@ -96,9 +96,9 @@ export default function OfertaPlanilha() {
             <CardHeader className="text-left pt-10 px-6">
               <CardTitle className="font-headline text-xl font-semibold text-center">Plano Premium</CardTitle>
               <div className="mt-2 text-center">
-                <span className="text-lg line-through text-primary-foreground/70">R$ 69,90</span>
+                <span className="text-lg line-through text-primary-foreground/70">R$ 77,90</span>
                 <div className="flex flex-col items-center gap-1">
-                    <span className="text-4xl font-bold">R$19,90</span>
+                    <span className="text-4xl font-bold">R$27,90</span>
                     <Badge variant="default" className="bg-accent text-accent-foreground text-xs font-semibold px-2 py-0.5 rounded-full">ECONOMIA DE R$ 50,00</Badge>
                 </div>
                 <p className="text-xs text-primary-foreground/80 mt-1">Melhor custo-benefício</p>

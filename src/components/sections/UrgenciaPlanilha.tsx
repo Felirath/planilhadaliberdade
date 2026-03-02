@@ -56,8 +56,8 @@ export default function UrgenciaPlanilha() {
           className="max-w-sm mx-auto bg-card text-card-foreground p-6 md:p-8 rounded-xl shadow-2xl animate-fade-in-up"
           style={{animationDelay: '0.2s'}}
         >
-          <p className="text-sm text-muted-foreground text-center line-through">DE: R$ 69,90</p>
-          <p className="text-5xl font-bold text-primary text-center my-2">R$ 19,90</p>
+          <p className="text-sm text-muted-foreground text-center line-through">DE: R$ 77,90</p>
+          <p className="text-5xl font-bold text-primary text-center my-2">R$ 27,90</p>
           
           <div className="text-center my-4">
             <Badge variant="default" className="text-sm py-1.5 px-4 bg-accent text-accent-foreground font-semibold shadow-md rounded-full">

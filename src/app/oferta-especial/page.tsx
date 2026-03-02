@@ -111,7 +111,7 @@ export default function OfertaEspecialPage() {
             <div className="bg-destructive/10 border-2 border-destructive p-6 rounded-lg shadow-lg animate-fade-in-up hover:shadow-xl transition-shadow" style={{animationDelay: '0.5s'}}>
               <h3 className="text-xl font-bold text-destructive mb-3">Por que você NÃO deve escolher o básico:</h3>
               <ul className="space-y-2 text-destructive">
-                {["Apenas 2 meses de acesso (depois você perde tudo)", "Sem tutorial para usar a planilha", "Sem os 6 bônus que valem mais de R$ 200", "Você vai ficar perdido sem orientação"].map(item => (
+                {["Apenas 1 mês de acesso (depois você perde tudo)", "Sem tutorial para usar a planilha", "Sem os 6 bônus que valem mais de R$ 200", "Você vai ficar perdido sem orientação"].map(item => (
                   <li key={item} className="flex items-start"><XCircleIcon />{item}</li>
                 ))}
               </ul>
@@ -119,7 +119,7 @@ export default function OfertaEspecialPage() {
             <div className="bg-primary/10 border-2 border-primary p-6 rounded-lg shadow-lg animate-fade-in-up hover:shadow-xl transition-shadow" style={{animationDelay: '0.6s'}}>
               <h3 className="text-xl font-bold text-primary mb-3">PORQUE VOCÊ DEVE ESCOLHER O PLANO PREMIUM:</h3>
               <ul className="space-y-2 text-primary">
-                {["Acesso VITALÍCIO", "Tutorial completo com direcionamento", "6 bônus exclusivos", "R$ 54,00 de economia"].map(item => (
+                {["Acesso VITALÍCIO", "Tutorial completo com direcionamento", "6 bônus exclusivos", "R$ 50,00 de economia"].map(item => (
                   <li key={item} className="flex items-start"><CheckCircle2 className="h-5 w-5 mr-2 mt-0.5 shrink-0" />{item}</li>
                 ))}
               </ul>
@@ -131,8 +131,8 @@ export default function OfertaEspecialPage() {
               <CardTitle className="text-2xl md:text-3xl font-headline">OFERTA ESPECIAL DO PLANO PREMIUM</CardTitle>
             </CardHeader>
             <CardContent className="p-0 text-center">
-              <p className="text-xl line-through text-primary-foreground/70">De R$ 69,90</p>
-              <p className="text-2xl line-through text-destructive/80">Por R$ 19,90</p>
+              <p className="text-xl line-through text-primary-foreground/70">De R$ 77,90</p>
+              <p className="text-2xl line-through text-destructive/80">Por R$ 27,90</p>
               <p className="text-xl md:text-2xl font-bold text-primary-foreground/90 mt-2">AGORA:</p>
               <p className="text-5xl font-bold my-1 text-accent">R$ 15,90</p>
               <Button 
@@ -152,10 +152,10 @@ export default function OfertaEspecialPage() {
                   <PixTextIcon />
               </div>
               <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-3">
-                  <Badge variant="secondary" className="py-1 px-3 text-xs bg-primary-foreground/20 text-primary-foreground">
+                  <Badge variant="secondary" className="py-1.5 px-3 text-xs bg-primary-foreground/20 text-primary-foreground">
                       <Shield className="mr-1 h-4 w-4"/> Garantia 7 dias
                   </Badge>
-                  <Badge variant="secondary" className="py-1 px-3 text-xs bg-primary-foreground/20 text-primary-foreground">
+                  <Badge variant="secondary" className="py-1.5 px-3 text-xs bg-primary-foreground/20 text-primary-foreground">
                       <LockKeyholeIcon className="mr-1 h-4 w-4"/> Pagamento Seguro
                   </Badge>
               </div>
