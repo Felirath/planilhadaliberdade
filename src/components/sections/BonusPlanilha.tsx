@@ -1,8 +1,18 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Archive, BookOpen, Zap, Users, HeartHandshake, TrendingUp, Star } from 'lucide-react';
+import { Archive, BookOpen, Zap, Users, HeartHandshake, TrendingUp, Star, Clock, Headphones, LineChart } from 'lucide-react';
 
 const bonuses = [
+  {
+    icon: <Clock className="h-8 w-8 text-primary" />,
+    title: "ACESSO VITALÍCIO",
+    description: "Pague uma única vez e tenha acesso para sempre, sem mensalidades ou renovações."
+  },
+  {
+    icon: <Headphones className="h-8 w-8 text-primary" />,
+    title: "SUPORTE ESPECIALIZADO",
+    description: "Nossa equipe está pronta para tirar todas as suas dúvidas e te ajudar no que for preciso."
+  },
   {
     icon: <Archive className="h-8 w-8 text-primary" />,
     title: "TODAS AS NOSSAS VERSÕES",
@@ -32,6 +42,11 @@ const bonuses = [
     icon: <Users className="h-8 w-8 text-primary" />,
     title: "GUIA: MÉTODO ADEUS DÍVIDAS",
     description: "O passo a passo comprovado para sair das dívidas e construir patrimônio."
+  },
+  {
+    icon: <LineChart className="h-8 w-8 text-primary" />,
+    title: "GUIA DE AÇÕES SECRETAS",
+    description: "Seu guia definitivo de ações secretas supervalorizadas que vão explodir em 2026."
   }
 ];
 
@@ -42,7 +57,7 @@ export default function BonusPlanilha() {
         <div className="text-center mb-12 animate-fade-in-up">
           <Star className="h-10 w-10 text-accent fill-accent mx-auto mb-4" />
           <h2 className="text-3xl md:text-4xl font-gagalin text-secondary-foreground uppercase">
-            VOCÊ AINDA RECEBE 6 BÔNUS <span className="font-bold text-gradient-gold">EXCLUSIVOS</span>
+            VOCÊ AINDA RECEBE 9 BÔNUS <span className="font-bold text-gradient-gold">EXCLUSIVOS</span>
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

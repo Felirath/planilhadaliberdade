@@ -116,7 +116,8 @@ export default function OfertaPlanilha() {
                   "Como não desistir no primeiro mês",
                   "Guia de hábitos que te afundam",
                   "Como economizar ganhando pouco",
-                  "Método adeus dívidas"
+                  "Método adeus dívidas",
+                  "Guia de ações secretas"
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-primary-foreground">
                     {i < 4 ? (
