@@ -1,12 +1,12 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Lightbulb, BarChartBig, SmilePlus, BrainCircuit } from 'lucide-react';
+import { Lightbulb, BarChartBig, Smartphone, BrainCircuit } from 'lucide-react';
 
 const benefits = [
   { text: "Calcula automaticamente o que entra e o que sai", icon: <Lightbulb className="h-6 w-6 mr-3 text-primary flex-shrink-0 animate-scale-in-fade-in" /> },
   { text: "Mostra onde você está gastando sem perceber", icon: <BarChartBig className="h-6 w-6 mr-3 text-primary flex-shrink-0 animate-scale-in-fade-in" /> },
-  { text: "Tira a ansiedade e traz clareza", icon: <SmilePlus className="h-6 w-6 mr-3 text-primary flex-shrink-0 animate-scale-in-fade-in" /> },
+  { text: "Funciona no celular e no computador", icon: <Smartphone className="h-6 w-6 mr-3 text-primary flex-shrink-0 animate-scale-in-fade-in" /> },
   { text: "Feita com base em princípios de psicologia financeira", icon: <BrainCircuit className="h-6 w-6 mr-3 text-primary flex-shrink-0 animate-scale-in-fade-in" /> }
 ];
 
