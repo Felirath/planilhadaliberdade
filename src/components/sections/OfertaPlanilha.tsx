@@ -65,7 +65,7 @@ export default function OfertaPlanilha() {
             </CardHeader>
             <CardContent className="flex-grow px-6">
               <ul className="space-y-2 mt-4">
-                {["Planilha da Liberdade", "1 Mês de Acesso", "7 Dias de Garantia"].map((feature, i) => (
+                {["Planilha da Liberdade", "7 Dias de Garantia", "1 Mês de Acesso"].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-muted-foreground">
                     <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0 text-muted-foreground" />
                     {feature}
@@ -153,10 +153,10 @@ export default function OfertaPlanilha() {
             </div>
             <div className="flex flex-wrap justify-center items-center gap-2">
                 <Badge variant="secondary" className="py-1.5 px-3 text-xs rounded-md">
-                    <Shield className="mr-1.5 h-4 w-4"/> Garantia 7 dias
+                    <Shield className="mr-1.5 h-4 w-4 text-muted-foreground"/> Garantia 7 dias
                 </Badge>
                 <Badge variant="secondary" className="py-1.5 px-3 text-xs rounded-md">
-                    <LockKeyholeIcon className="mr-1.5 h-4 w-4"/> Pagamento Seguro
+                    <LockKeyholeIcon className="mr-1.5 h-4 w-4 text-muted-foreground"/> Pagamento Seguro
                 </Badge>
             </div>
         </div>
