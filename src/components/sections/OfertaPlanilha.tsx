@@ -108,8 +108,8 @@ export default function OfertaPlanilha() {
               <ul className="space-y-2 mt-4">
                 {[
                   "Planilha da Liberdade",
-                  "Acesso Vitalício",
                   "7 Dias de Garantia",
+                  "Acesso Vitalício",
                   "Suporte Especializado",
                   "Todas as nossas versões",
                   "Tutorial de como usar a planilha",
@@ -117,10 +117,10 @@ export default function OfertaPlanilha() {
                   "Guia de hábitos que te afundam",
                   "Como economizar ganhando pouco",
                   "Método adeus dívidas",
-                  "Guia: Ações secretas para 2026"
+                  "Guia de ações secretas para 2026"
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center font-body text-sm text-primary-foreground">
-                    {i < 4 ? (
+                    {i < 2 ? (
                       <CheckCircle2 className="h-4 w-4 mr-2 flex-shrink-0" />
                     ) : (
                       <Star className="h-4 w-4 mr-2 flex-shrink-0" fill="currentColor" stroke="hsl(var(--primary-foreground))" />

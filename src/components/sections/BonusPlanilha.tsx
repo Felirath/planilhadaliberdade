@@ -30,7 +30,7 @@ const bonuses = [
   },
   {
     icon: <Zap className="h-8 w-8 text-primary" />,
-    title: "GUIA: 10 HÁBITOS QUE AFUNDAM SUAS FINANÇAS",
+    title: "GUIA DE HÁBITOS QUE TE AFUNDAM",
     description: "Descubra os comportamentos que drenam seu dinheiro e aprenda a eliminá-los."
   },
   {
@@ -39,14 +39,14 @@ const bonuses = [
     description: "Estratégias realistas para fazer o dinheiro render mesmo com salário apertado."
   },
   {
-    icon: <Users className="h-8 w-8 text-primary" />,
-    title: "GUIA: MÉTODO ADEUS DÍVIDAS",
-    description: "O passo a passo comprovado para sair das dívidas e construir patrimônio."
-  },
-  {
     icon: <LineChart className="h-8 w-8 text-primary" />,
     title: "GUIA: AÇÕES SECRETAS PARA 2026",
     description: "Seu guia definitivo de ações secretas supervalorizadas que vão explodir em 2026."
+  },
+  {
+    icon: <Users className="h-8 w-8 text-primary" />,
+    title: "GUIA: MÉTODO ADEUS DÍVIDAS",
+    description: "O passo a passo comprovado para sair das dívidas e construir patrimônio."
   }
 ];
 
